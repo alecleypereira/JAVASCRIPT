@@ -1,1 +1,55 @@
 @charset "UTF-8";
+
+
+body{
+    background-image: linear-gradient(to right, #3a3a52, #5d5d81);
+    width: 100vw;
+    height: 100vh;
+}
+header h1{
+    text-align: left;
+    font-size: 4vw;
+    font-weight: bolder;
+    margin: 20px;
+}
+main section p{
+    margin-top: 40px;
+    font-size: 1em;
+    font-weight:bold;
+}
+main{
+    margin: auto;
+    background-color:#363458 ;
+    width: 90vw;
+    
+    flex-flow:row wrap;
+    justify-content:center;
+    align-items:center;
+
+}
+section#txt{
+    width:250px ;
+    height:300px ;
+    text-align: left;
+    font-size: 1.2em;
+}
+section.item{
+    height: 250px;
+    width: 250px;
+    
+}
+
+
+section.item li{
+    font-size: 1.2em;
+    line-height: 30px;
+    margin-top:8px;
+    margin-left: 25px;
+}
+div.button{
+    
+}
+div.button input{
+    width: 150px;
+    height: 40px;
+}

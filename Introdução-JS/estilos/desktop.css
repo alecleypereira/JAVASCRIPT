@@ -1,1 +1,49 @@
 @charset "UTF-8";
+
+
+body{
+    background-image: linear-gradient(to right, #3a3a52, #5d5d81);
+    width: 100vw;
+    height: 100vh;
+}
+
+
+header h1{
+    text-align: left;
+    font-weight: bolder;
+    font-size: 3.5vw;
+    margin: 25px;
+}
+main{
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    margin: auto;
+    background-color:#363458 ;
+}
+
+main > section#txt{
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 300px;
+    margin: 20px;
+}
+section.item{
+    width: 250px;
+    height: 300px;
+}
+section.item h1{
+
+}
+section.item li{
+    font-size: 1.3em;
+    line-height: 40px;
+    margin-top:8px;
+    margin-left: 30px;
+}
+
+div.button input{
+    width: 200px;
+    height: 50px;
+}
