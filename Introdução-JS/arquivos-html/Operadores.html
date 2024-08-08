@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+</head>
+<body>
+    <header>
+        <h1>Operadores do JAVASCRIPT</h1>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>O que são Operadores</h2>
+        <p>Operadores são símbolos especiais em programação que são usados para realizar operações em operandos (valores ou variáveis). Eles permitem a manipulação e a comparação de dados de forma eficiente e clara. Cada tipo de operador tem uma função específica e é essencial para a construção de expressões e instruções em um programa.</p>
+        <h3>Operadores Aritméticos</h3>
+        <p>Os operadores aritméticos são usados para realizar operações matemáticas comuns.</p>
+
+        <ul>
+            <li>Adição (+): a + b</li>
+            <li>Subtração (-): a - b</li>
+            <li>Multiplicação (*): a * b</li>
+            <li>Divisão (/): a / b</li>
+            <li>Módulo (%): a % b (resto da divisão)</li>
+            <li>Incremento (++): a++ (aumenta o valor em 1)</li>
+            <li>Decremento (--): a-- (diminui o valor em 1)</li>
+            
+        </ul>
+        <h3>Operadores de Atribuição</h3>
+        <p>Os operadores de atribuição são usados para atribuir valores às variáveis.</p>
+
+        <ul>
+            <li></li>Atribuição Simples (=): a = b
+            <li></li>Atribuição de Adição (+=): a += b (equivale a a = a + b)
+            <li></li>Atribuição de Subtração (-=): a -= b (equivale a a = a - b)
+            <li></li>Atribuição de Multiplicação (*=): a *= b (equivale a a = a * b)
+            <li></li>Atribuição de Divisão (/=): a /= b (equivale a a = a / b)
+            <li></li>Atribuição de Módulo (%=): a %= b (equivale a a = a % b)
+        </ul>
+        <h3>Operadores Relacionais</h3>
+        <p>Os operadores relacionais são usados para comparar valores e retornam um booleano (true ou false).</p>
+
+        <ul>
+            <li>Igualdade (==): a == b</li>
+            <li>Desigualdade (!=): a != b</li>
+            <li>Estritamente Igual (===): a === b</li>
+            <li>Estritamente Desigual (!==): a !== b</li>
+            <li>Maior que (>): a > b</li>
+            <li>Maior ou Igual (>=): a >= b</li>
+            <li>Menor que (<): a < b</li>
+            <li>Menor ou Igual (<=): a <= b</li>
+        </ul>
+        <h3>Operadores Lógicos</h3>
+        <p>Os operadores lógicos são usados para combinar múltiplas condições booleanas.</p>
+
+        <ul>
+            <li>E (&&): a && b (true se ambos os operandos forem true)</li>
+            <li>OU (||): a || b (true se pelo menos um dos operandos for true)</li>
+            <li>NÃO (!): !a (inverte o valor booleano)</li>
+        </ul>
+        <h3>Operador Ternário</h3>
+        <P>O operador ternário é uma forma abreviada de escrever uma declaração condicional if-else.</P>
+
+        <ul>
+            <li>Sintaxe: condição ? valor1 : valor2</li>
+            <li>Se condição for true, o operador retorna valor1, caso contrário, retorna valor2.</li>
+        </ul>
+
+        <iframe src="./iframes/operadores/ternário.html" frameborder="0"></iframe>
+        
+        <h2>Importância dos Operadores</h2>
+        <p>Operadores são fundamentais na programação porque permitem a execução de cálculos, a tomada de decisões, a atribuição de valores e a combinação de expressões complexas de maneira clara e concisa. Sem operadores, a escrita e a leitura de código se tornariam muito mais complicadas e menos intuitivas.</p>
+                
+        
+            </article>
+        </section>
+        <section>
+            <article>
+                <h2>Operadores Avançados em JavaScript</h2> 
+                <h3>Operadores de Comparação Estrita e Não Estrita</h3>
+                <p>Em JavaScript, os operadores de comparação são usados para comparar valores e retornam um valor booleano (true ou false). Existem dois tipos principais de operadores de comparação: estritos e não estritos.</p>
+
+                <h4>Comparação Não Estrita</h4>
+                <p>Os operadores de comparação não estritos (== e !=) comparam dois valores após convertê-los para um tipo comum (coerção). Isso significa que, se os valores a serem comparados forem de tipos diferentes, o JavaScript tentará convertê-los para um tipo comum antes de fazer a comparação. Essa conversão pode levar a resultados inesperados.</p>
+
+                <iframe src="./iframes/operadores/Comparacao_nao_Estrita.html" frameborder="0"></iframe>
+                <h4>Comparação Estrita</h4>
+                <p>Os operadores de comparação estritos (=== e !==) comparam tanto o valor quanto o tipo dos operandos sem realizar qualquer conversão de tipo. Isso garante que a comparação seja feita de maneira mais precisa e previsível.</p>
+                <iframe src="./iframes/operadores/Comparacao_Restrita.html" frameborder="0"></iframe>
+
+                <p>Usar operadores de comparação estrita (=== e !==) é geralmente considerado uma boa prática em JavaScript, pois evita comportamentos inesperados causados pela coerção de tipos.</p>
+                <h3>Operadores Bitwise</h3>
+
+                <p>Operadores bitwise realizam operações em nível de bits.</p>
+
+                <ul>
+                    <li>AND (&): Retorna 1 se ambos os bits forem 1.</li>
+                    <li>OR (|): Retorna 1 se pelo menos um dos bits for 1.</li>
+                    <li>XOR (^): Retorna 1 se os bits forem diferentes.</li>
+                    <li>NOT (~): Inverte todos os bits.</li>
+                    <li>Shift Left (<<): Desloca os bits para a esquerda.</li>
+                    <li>Shift Right (>>): Desloca os bits para a direita, preservando o sinal.</li>
+                    <li>Unsigned Shift Right (>>>): Desloca os bits para a direita, preenchendo com zeros.</li>
+                </ul>
+
+                <iframe src="./iframes/operadores/bit_a_bit.html" frameborder="0"></iframe>
+
+                <h3>Operadores Unários</h3>
+
+
+                <ul>
+                    <li>typeof: Retorna o tipo de dado de uma variável.</li>
+                    <li>delete: Remove uma propriedade de um objeto.</li>
+                    <li>void: Avalia uma expressão e retorna undefined.</li>
+                    <li>+: Converte o operando para um número.</li>
+                    <li>-: Converte o operando para um número e aplica a negação.</li>
+                    <li>++ e --: Incrementa ou decrementa o valor da variável.</li>
+                </ul>
+                <iframe src="./iframes/operadores/Operadores_Unarios.html" frameborder="0"></iframe>
+
+                <h3>Operador de Spread e Rest</h3>
+
+
+                <ul>
+                    <li>Spread (...): Espalha os elementos de um array ou as propriedades de um objeto.</li>
+                    <li>Rest (...): Reúne múltiplos elementos em um array ou parâmetros em uma função.</li>
+                </ul>
+
+                <iframe src="./iframes/operadores/Operador_Spread_Rest.html" frameborder="0"></iframe>
+            </article>
+            
+            
+        </section>
+        
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

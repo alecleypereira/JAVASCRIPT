@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador de Spread e Rest</title>
+</head>
+<body>
+    <pre>
+const arr = [1, 2, 3]
+const newArr = [...arr, 4, 5] // [1, 2, 3, 4, 5]
+const obj = { a: 1, b: 2 }
+const newObj = { ...obj, c: 3 } // { a: 1, b: 2, c: 3 }
+
+// Rest
+function sum(...numbers) {
+  return numbers.reduce((acc, num) => acc + num, 0)
+}
+console.log(sum(1, 2, 3, 4)) // 10
+    </pre>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Dados</title>
+</head>
+<body>
+    <header>
+        <h1>Tipos de Dados</h1>
+    </header>
+    <main>
+        <section>
+            <article>
+                <p>No JavaScript, um dos aspectos fundamentais da programação é a manipulação de dados. Os dados representam as informações que um programa processa e pode se manifestar de diversas formas. No contexto do JavaScript, os tipos de dados definem a natureza dos valores que uma variável pode armazenar e como esses valores são tratados pelo código.</p>
+
+                <p>JavaScript é uma linguagem de tipagem dinâmica, o que significa que você não precisa especificar o tipo de dados ao declarar uma variável; o tipo é determinado automaticamente com base no valor atribuído. Existem dois principais grupos de tipos de dados em JavaScript: tipos primitivos e tipos de objeto.</p>
+
+                <h2>Os tipos primitivos incluem:</h2>
+                <ul>
+                    <li>Number: Representa números, tanto inteiros quanto flutuantes.</li>
+                    <iframe src="./iframes/tipos_de_dados/Number.html" frameborder="0"></iframe> 
+                    <li>String: Representa cadeias de caracteres.</li> 
+                    <iframe src="./iframes/tipos_de_dados/String.html" frameborder="0"></iframe>
+                    <li>Boolean: Representa valores lógicos, verdadeiro (true) ou falso (false)</li>
+                    <iframe src="./iframes/tipos_de_dados/Boolean.html" frameborder="0"></iframe> 
+                    <li>Undefined: Representa uma variável que foi declarada, mas ainda não possui valor atribuído.</li> 
+                    <iframe src="./iframes/tipos_de_dados/Undefined.html" frameborder="0"></iframe>
+                    <li>Null: Representa a ausência intencional de valor.</li>
+                    <iframe src="./iframes/tipos_de_dados/Null.html" frameborder="0"></iframe> 
+                    <li>Symbol: Introduzido no ECMAScript 6, representa um valor único e imutável.</li> 
+                    <iframe src="./iframes/tipos_de_dados/Symbol.html" frameborder="0"></iframe>
+                    <li>BigInt: Representa números inteiros de tamanho arbitrário, útil para operações que envolvem números muito grandes.</li>
+                    <iframe src="./iframes/tipos_de_dados/BigInt.html" frameborder="0"></iframe>
+                </ul>
+            </article>
+            <article>
+                <h2>Os tipos de objeto incluem:</h2>
+                <ul>
+                    <li>Object: Representa uma coleção de pares chave-valor, podendo armazenar múltiplos valores em uma estrutura complexa.</li>
+                    <li>Array: Uma forma especial de objeto que armazena uma lista ordenada de valores.</li>
+                    <li>Function: Também um tipo especial de objeto, que representa blocos de código reutilizáveis.</li>
+                    <li>Date e RegExp: Objetos especializados para manipulação de datas e expressões regulares, respectivamente.</li>
+                </ul>
+             <h2>Arrays</h2>
+
+            <p>Arrays são uma forma especial de objeto que armazena uma lista ordenada de valores.</p>
+            <iframe src="./iframes/tipos_de_dados/Array.html" frameborder="0"></iframe>
+
+            <h2>Object</h2>
+
+            <p>Objetos em JavaScript são coleções de pares chave-valor, permitindo armazenar múltiplos valores e propriedades. Um objeto pode ser criado usando a notação de chaves `{}`.</p>
+            <iframe src="./iframes/tipos_de_dados/Object.html" frameborder="0"></iframe>
+
+             <h2>Function</h2>
+
+            <p>Funções também são objetos em JavaScript e podem ser armazenadas em variáveis, passadas como argumentos e retornadas de outras funções.</p>
+            <iframe src="./iframes/tipos_de_dados/Function.html" frameborder="0"></iframe>
+
+             <h2>Date e RegExp</h2>
+
+            <p>Objetos `Date` são usados para manipular datas e horas, enquanto `RegExp` são usados para trabalhar com expressões regulares.</p>
+            <iframe src="./iframes/tipos_de_dados/Date_e_RegExp.html" frameborder="0"></iframe>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h2>Tipagem Dinâmica</h2>
+
+                <p>JavaScript é uma linguagem de tipagem dinâmica, o que significa que você não precisa declarar explicitamente o tipo de uma variável. O tipo é determinado automaticamente com base no valor atribuído. Isso permite flexibilidade, mas também pode levar a comportamentos inesperados. Por exemplo, uma variável pode começar como um número e, em seguida, receber um valor de string:</p>
+                <iframe src="./iframes/tipos_de_dados/tipagem_dinamica.html" frameborder="0"></iframe>
+
+                <p>A compreensão da tipagem dinâmica é essencial para evitar bugs e escrever código robusto.</p>
+
+                <p>Também existem linguagem de tipagem estática, nelas você a declara já especificando qual será seu tipo assim ela só recebera valores desse tipo ou dará erro de tipagem.</p>
+
+                <h2>Tipagem Forte e Fraca</h2>
+
+                <p>JavaScript é uma linguagem de tipagem fraca, o que significa que permite operações entre diferentes tipos de dados sem causar um erro. Em uma linguagem de tipagem fraca, o compilador ou interpretador realiza conversões automáticas de tipos (coerção) para que a operação possa ser realizada. Isso pode levar a resultados inesperados se não for bem compreendido.</p>
+
+                <iframe src="./iframes/tipos_de_dados/Tipagem_forte_fraca.html" frameborder="0"></iframe>
+
+                <p>No primeiro exemplo, o operador + faz uma concatenação de strings porque uma das operando é uma string. No segundo exemplo, o operador - força ambos os operandos a serem convertidos para números.</p>
+                <p>Vantagens da Tipagem Fraca:</p>
+                <ul>
+                    <li>Flexibilidade: Permite operações mais flexíveis e rápidas, sem a necessidade de conversões explícitas.</li>
+                    <li>Código menos verboso: Menos declarações e conversões explícitas necessárias.</li>
+                </ul>
+
+                <p>Desvantagens da Tipagem Fraca:</p>
+
+                <ul>
+                    <li>Potencial para bugs: Pode levar a comportamentos inesperados e bugs difíceis de identificar.</li>
+                    <li>Leitura e manutenção: Código pode ser mais difícil de ler e manter devido à falta de clareza sobre os tipos.</li>
+                </ul>
+
+                <p>Tipagem Forte:</p>
+                <p>Em contrapartida, linguagens de tipagem forte (como Java, Python e Rust) não permitem operações entre diferentes tipos de dados sem conversão explícita. Em uma linguagem de tipagem forte, o tipo de dados de uma variável é rigorosamente imposto, e qualquer tentativa de usar uma variável de um tipo de dados em uma operação que espera outro tipo de dados resultará em um erro.</p>
+
+                <p>Exemplo em Python:</p>
+                <iframe src="./iframes/tipos_de_dados/tipagem_forte.html" frameborder="0"></iframe>
+
+                <p>Neste exemplo, o Python gera um erro porque você está tentando somar um número inteiro e uma string sem fazer uma conversão explícita.</p>
+
+                <p>Vantagens da Tipagem Forte:</p>
+
+                <ul>
+                    <li>Segurança: Reduz o risco de bugs relacionados à coerção de tipos.</li>
+                    <p>Clareza: Código geralmente mais claro e fácil de entender, pois os tipos são explícitos.</p>
+                    <p>Ferramentas: Melhor suporte para ferramentas como depuradores e analisadores estáticos, que podem prever e detectar erros de tipo.</p>
+                </ul>
+
+                <p>Desvantagens da Tipagem Forte:</p>
+
+                <ul>
+                    <li>Menos flexibilidade: Exige mais conversões explícitas, o que pode tornar o código mais verboso.</li>
+                    <li>Curva de aprendizado: Pode ser mais difícil para iniciantes entenderem a necessidade de conversões explícitas e declarações de tipo.</li>
+                </ul>
+
+                <p>OBS:  A coerção é um artifício do javaScript que pode agir de forma não intuitivas por isso não se recomendar confiar nele e sim desenvolver seu código para que ele funcione sem a dependência desse artifício evitando possíveis bugs.</p>
+            </article>
+            <article>
+                <h2>Conversão de Tipos:</h2>
+
+                <p>JavaScript pode realizar conversões de tipos (ou coerção) tanto de forma implícita quanto explícita. A coerção implícita ocorre quando o JavaScript automaticamente converte um tipo para outro, enquanto a coerção explícita é feita pelo programador usando funções como `Number()`, `String()`, e `Boolean()`.</p>
+                
+                <iframe src="./iframes/tipos_de_dados/Converção_de_Tipos.html" frameborder="0"></iframe>
+
+                <p>Compreender como e quando a coerção ocorre é fundamental para evitar resultados inesperados.</p>
+
+                <h2>Imutabilidade dos Tipos Primitivos:</h2>
+
+                <p>Tipos primitivos em JavaScript são imutáveis, o que significa que uma vez criado, seu valor não pode ser alterado. Por exemplo, operações em strings sempre retornam novas strings em vez de modificar a string original:</p>
+
+                <iframe src="./iframes/tipos_de_dados/Imutabilidade_dos_Primitivos.html" frameborder="0"></iframe>
+
+                <p>Em contraste, objetos e arrays são mutáveis e suas propriedades e elementos podem ser alterados diretamente.</p>
+
+                <h3>Uso Comum e Boas Práticas:</h3>
+
+                <p>Ao usar tipos de dados em JavaScript, é importante seguir algumas boas práticas:</p>
+
+                <ul>
+                    <li>Escolha o tipo de dados correto para suas variáveis. Use `Number` para cálculos, `String` para texto, `Boolean` para valores verdadeiros/falsos, e assim por diante.</li>
+                    <li>Seja consistente e explícito quando possível. Evite confiar em coerção implícita, especialmente em operações aritméticas e comparações.</li>
+                    <li>Lembre-se de que `undefined` e `null` são diferentes. `undefined` indica que uma variável foi declarada mas não inicializada, enquanto `null` é uma atribuição explícita de ausência de valor.</li>
+                    <li>Utilize `BigInt` para números inteiros extremamente grandes que não podem ser representados com precisão pelo tipo `Number`.</li>
+                </ul>
+                 <iframe src="./iframes/tipos_de_dados/Boas_praticas.html" frameborder="0"></iframe>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
