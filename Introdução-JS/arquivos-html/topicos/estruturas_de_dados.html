@@ -31,35 +31,81 @@
                 <ul>
                     <li>push()</li>
                         <p> Adiciona um ou mais elementos ao final do array.</p>
+                        <iframe src="../iframes/estruturas_de_dados/ex_metodo_push().html" frameborder="0"></iframe>
+                        <p>Retorno: o número de elementos no array após a adição.</p>
                     <li>pop()</li>
                         <p>Remove e retorna o último elemento do array.</p>
+                        <iframe src="../iframes/estruturas_de_dados/ex_metodo_pop().html" frameborder="0"></iframe>
                     <li>map()</li>
-                        <p>Remove e retorna o último elemento do array.</p>
+                        <p>O método map() em JavaScript é usado para criar um novo array com os resultados da aplicação de uma função em cada elemento do array original. Ele não modifica o array original.</p>
+                        <iframe src="../iframes/estruturas_de_dados/ex_metodo_map().html" frameborder="0"></iframe>
+                        <p>Retorno: Um novo array com os valores transformados pela função fornecida.</p>
                     <li>reduce()</li>
                         <p>Reduz um arrys a um único resultado/valor acumulando ao longo do array.</p>
+                        <iframe src="../iframes/estruturas_de_dados/ex_metodo_reduce().html" frameborder="0"></iframe>
+                        <p>Retorno: um unico valor resultande da função usada.</p>
+                        <p>No caso do método reduce() a função que ele recebe terá o primeiro parâmetros como o valor valor Anterior e o segundo como  valor Atual. Você vai usar esses parâmetros na função que irá considerar cada array um valor.</p>
+                        <p>Após a função você deve definir qual será o primeiro valor do primeiro parâmetros, pois ainda não há valor anterior.</p>
+                        <p>Como os dois primeiros parâmetros da função em reduce são referidos aos elementos anteriores e atual, os parâmetros seguintes seguem a ordem normal sendo o terceiro o indice e o quarto o array.</p>
                     <li>filter()</li>
                         <p>Filtra os elementos de um arrays com base em uma condição e retorna um novo array com os elementos que passaram no teste.</p>
+                        <iframe src="../iframes/estruturas_de_dados/ex_metodo_filter().html" frameborder="0"></iframe>
                     <li>shift()</li>
                         <p>Remove e retorna o primeiro elemento do array.</p>
+                        <iframe src="../iframes/estruturas_de_dados/ex_metodo_shift().html" frameborder="0"></iframe>
                     <li>unshift()</li>
                         <p>Adiciona um ou mais elementos no início do array.</p>
+                        <iframe src="../iframes/estruturas_de_dados/ex_metodo_unshift().html" frameborder="0"></iframe>
                     <li>splice()</li>
                         <p>Para remover, adicionar ou substituir elementos no array original.</p>
+                        <iframe src="../iframes/estruturas_de_dados/ex_metodo_splice().html" frameborder="0"></iframe>
                     <li>slice()</li>
                         <p>Para criar cópias de partes de um array sem alterar o array original.</p>
+                        <iframe src="../iframes/estruturas_de_dados/ex_metodo_slice().html" frameborder="0"></iframe>
                     <li>some()</li>
                         <p>Verifica se pelo menos um elemento do array passa no teste, retornando "true" ou "false".</p>
+                        <iframe src="../iframes/estruturas_de_dados/ex_metodo_some().html" frameborder="0"></iframe>
                     <li>every()</li>
                         <p>Verifica se todos os elemento do array passam no teste, retornando "true" ou "false".</p>
+                        <iframe src="../iframes/estruturas_de_dados/ex_metodo_every().html" frameborder="0"></iframe>
                     <li>find()</li>
                         <p>Retorna o primeiro elemento que passa em um teste especifico.</p>
+                        <iframe src="../iframes/estruturas_de_dados/ex_metodo_find().html" frameborder="0"></iframe>
                     <li>include()</li>
                         <p>Verifica se um array tem um valor especifico, retornando "true" ou "false".</p>
+                        <iframe src="../iframes/estruturas_de_dados/ex_includes().html" frameborder="0"></iframe>
                     <li>sort()</li>
                         <p>Ordena os elementos do arrys de forma crecente ou decrecente</p>
+                        <iframe src="../iframes/estruturas_de_dados/ex_metodo_sort().html" frameborder="0"></iframe>
                     <li>forEach</li>
                         <p>Serve para iterar e executar funções em cada elemento do array</p>
+                        <iframe src="../iframes/estruturas_de_dados/ex_metodo_forEach().html" frameborder="0"></iframe>
 
+                </ul>
+                <h2>Explicação dos 3 parâmetros da função:</h2>
+                <h3>Elemento:</h3>
+                <p>Representa o valor atual do array que está sendo processado. É o elemento em que a função está "trabalhando" no momento.</p>
+                <h3>Indice:</h3>
+                <p>Representa o índice (posição) do elemento atual no array. Útil se você precisa saber a posição do elemento para algum cálculo ou lógica.</p>
+                <h3>Array:</h3>
+                <p>Representa o array completo que está sendo iterado. Útil se você precisa acessar o array inteiro dentro da função.</p>
+                <p><strong>OBS:</strong> vale lembar que os nomes dos parâmetros são nomeados, ou seja, você pode escolher os nomes. oque importa no final é a orndem que eles foram colocados.</p>
+                <p>A depender do método ele pode precisar de um ou mais parametros assim, ou nem sequer necessitar da função callback (usada dentro do método).</p>
+
+            </article>
+            <article>
+                <h2>Loops para Iterar Arrays e Objetos</h2>
+                <ul>
+                    <li>For...of</li>
+                    <p>É usado para iterar elementos de arrays ou outros objetos iteráveis. Ele percorre os valores dos elementos.</p>
+                    <li>For...in</li>
+                    <p>É usado para iterar as chaves de um objeto. Ele percorre as propriedades enumeráveis.</p>
+                </ul>
+            </article>
+            <article>
+                <h2>Métodos Básicos de Objetos</h2>
+                <ul>
+                    <li></li>
                 </ul>
             </article>
         </section>
