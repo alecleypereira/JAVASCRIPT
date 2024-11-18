@@ -47,6 +47,7 @@
                         <p>No caso do método reduce() a função que ele recebe terá o primeiro parâmetros como o valor valor Anterior e o segundo como  valor Atual. Você vai usar esses parâmetros na função que irá considerar cada array um valor.</p>
                         <p>Após a função você deve definir qual será o primeiro valor do primeiro parâmetros, pois ainda não há valor anterior.</p>
                         <p>Como os dois primeiros parâmetros da função em reduce são referidos aos elementos anteriores e atual, os parâmetros seguintes seguem a ordem normal sendo o terceiro o indice e o quarto o array.</p>
+                        <p>na última iteração, o valor do acumulador é atualizado com base no último elemento do array, e esse valor final é o que o reduce()</p>
                     <li>filter()</li>
                         <p>Filtra os elementos de um arrays com base em uma condição e retorna um novo array com os elementos que passaram no teste.</p>
                         <iframe src="../iframes/estruturas_de_dados/ex_metodo_filter().html" frameborder="0"></iframe>
@@ -56,12 +57,20 @@
                     <li>unshift()</li>
                         <p>Adiciona um ou mais elementos no início do array.</p>
                         <iframe src="../iframes/estruturas_de_dados/ex_metodo_unshift().html" frameborder="0"></iframe>
+                        <p>Tanto o método shift quanto o unshift, ao serem usados em um array modificam a quantidade de indices e os indices de cada elemento.</p>
                     <li>splice()</li>
                         <p>Para remover, adicionar ou substituir elementos no array original.</p>
                         <iframe src="../iframes/estruturas_de_dados/ex_metodo_splice().html" frameborder="0"></iframe>
+                       <p>OBS: ele modifica o array original adicionando ou removendo os elementos</p>
+                       <p>Seus parametros serve para especificar onde comeca a exclusão de elementos e quantos serão excluidos a partir do primeiro parametro . Os demais adicionados serão considerados elementos a serem adiconados nesse espaço que foi apagado.</p>
+                       <p>array.splice(índiceInicial, quantidadeParaRemover, item1, item2, ..., itemN)</p>
+                       <p>Se você colocar 0 no segundo parametro ele nao irá apagar nada, porém se ele for omitido todos os itens a partir do indiceInicial serão removidos. </p>
+                       <p>O método splice retorna apenas elementos removidos</p>
+
                     <li>slice()</li>
                         <p>Para criar cópias de partes de um array sem alterar o array original.</p>
-                        <iframe src="../iframes/estruturas_de_dados/ex_metodo_slice().html" frameborder="0"></iframe>
+                        <iframe src="../iframes/estruturas_de_dados/ex_metodo_slice().html" frameborder="0"></iframe> <p>Você terá que especificar onde irá comecar e terminar a parte que você quer cópiar do array original. O primeiro valor será onde comeca e o segundo onde para. </p>
+                        <p>Se você não especificar nenhum parametro ele irá copiar o array inteiro.</p>
                     <li>some()</li>
                         <p>Verifica se pelo menos um elemento do array passa no teste, retornando "true" ou "false".</p>
                         <iframe src="../iframes/estruturas_de_dados/ex_metodo_some().html" frameborder="0"></iframe>

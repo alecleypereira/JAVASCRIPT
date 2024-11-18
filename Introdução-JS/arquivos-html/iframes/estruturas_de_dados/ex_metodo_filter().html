@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método filter()</title>
+</head>
+<body>
+    <pre>
+    let numeros = [
+        11,
+        22,
+        39,
+        20
+    ]
+    // filtrar quem tem mais de 20 anos
+    let maiorQue20 = numeros.filter((elemento, indice, array) =>{
+      return elemento > 20 
+      // pode usar if else ou qualquer coisa contanto que retorne boleano
+    })
+
+    console.log(numeros)
+    console.log('-------------------------')
+    console.log(maiorQue20)
+    </pre>
+</body>
+</html>
