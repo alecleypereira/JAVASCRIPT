@@ -84,11 +84,15 @@
                         <p>Verifica se um array tem um valor especifico, retornando "true" ou "false".</p>
                         <iframe src="../iframes/estruturas_de_dados/ex_includes().html" frameborder="0"></iframe>
                     <li>sort()</li>
-                        <p>Ordena os elementos do arrys de forma crecente ou decrecente</p>
+                        <p>Ordena os elementos do arrys de forma crecente ou decrecente</p><p>Esse método tem 2 parametros na sua função callback e os compara se der negativo ele mantem a ordem se der positivo ele troca os valores se der zero mantem a ordem</p>
                         <iframe src="../iframes/estruturas_de_dados/ex_metodo_sort().html" frameborder="0"></iframe>
+                        <p>voce pode usar a funcao 'localeCompare' para compara strings essa funcao compara duas strings de acordo com as regras do idioma, retornando um valor +, - ou nulo.</p>
+                        <iframe src="../iframes/estruturas_de_dados/ex_metodo_sort()_2.html" frameborder="0"></iframe>
                     <li>forEach</li>
                         <p>Serve para iterar e executar funções em cada elemento do array</p>
                         <iframe src="../iframes/estruturas_de_dados/ex_metodo_forEach().html" frameborder="0"></iframe>
+                        <p>O método em si não retorna nada (Undefined), porém ele serve para você iterar sobre os elementos do array e armazenar ou exibir eles.</p>
+                        <p>Caso queria modificar algo no array original é necessario que faça explicitamente isso como no exemplo acima.</p>
 
                 </ul>
                 <h2>Explicação dos 3 parâmetros da função:</h2>
@@ -100,6 +104,16 @@
                 <p>Representa o array completo que está sendo iterado. Útil se você precisa acessar o array inteiro dentro da função.</p>
                 <p><strong>OBS:</strong> vale lembar que os nomes dos parâmetros são nomeados, ou seja, você pode escolher os nomes. oque importa no final é a orndem que eles foram colocados.</p>
                 <p>A depender do método ele pode precisar de um ou mais parametros assim, ou nem sequer necessitar da função callback (usada dentro do método).</p>
+
+            </article>
+            <article>
+                <h2>Como excluir elementos de um array</h2>
+                <p>O método mais comum e eficaz para remover um elemento em um índice específico é o splice(). Pórem existe outro muito usado também chamado <strong>'Delete'</strong>.</p>
+                <h3>Delete em array</h3>
+                <p>O delete remove o elemento de um índice específico, mas não reordena o array. O índice ainda existirá, mas será preenchido com undefined.</p>
+                <iframe src="../iframes/estruturas_de_dados/Ex_delete.html" frameborder="0"></iframe>
+                <p><strong>Obs:</strong>O uso de delete não é recomendado para arrays, porque deixa "buracos" no array.  </p>
+
 
             </article>
             <article>
