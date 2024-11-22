@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object.assing()_3</title>
+</head>
+<body>
+    <pre>
+    let  carro = {velocidade_max:290.00, fabricacao:1990}
+    let  carro2 = {velocidade_max:290.00, fabricacao:2000}
+    let  carro_novo = Object.assign({}, carro, carro2)
+    //carro2.fabricacao vai sobre escrever carro.fabricacao
+    console.log(carro_novo)
+    </pre>
+</body>
+</html>

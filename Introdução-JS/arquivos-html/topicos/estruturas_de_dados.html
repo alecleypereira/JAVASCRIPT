@@ -21,7 +21,30 @@
             <article>
                 <h2>Objetos</h2>
                 <p>Objetos são coleções de pares chave-valor, onde as chaves são strings (ou símbolos) que mapeiam para valores de qualquer tipo. Eles são definidos usando chaves {}. Por exemplo, const pessoa = { nome: "Ana", idade: 25 };. Você pode acessar as propriedades usando a notação de ponto pessoa.nome ou colchetes pessoa["idade"].</p>
+                <p>Podemos pensar em um objeto como um array porem voce tem que nomear os indices agora chamados de propriedades.</p>
                 <iframe src="../iframes/estruturas_de_dados/ex_declara_objeto.html" frameborder="0"></iframe>
+                
+                <h3>Acessando propriedades usando ponto</h3>
+                <p>Usado quando você conhece o nome da propriedade e ela é um identificador válido de JavaScript (sem caracteres especiais ou espaços).</p>
+                <p>Nesse caso a propriedade é tratado como literal</p>
+                <p><strong>Literal:</strong> No contexto de programação, literal é um valor escrito diretamente no código, representando exatamente aquilo que você vê. É um valor fixo, que não depende de variáveis ou cálculos.</p>
+
+                <iframe src="../iframes/estruturas_de_dados/acessar_com_ponto.html" frameborder="0"></iframe>
+                <p>Não pode ser usado se o nome da propriedade:</p>
+                <ul>
+                    <li>Contém espaços ou caracteres especiais (exemplo: marca do carro).</li>
+                    <li>Começa com um número (exemplo: 1modelo).</li>
+                    <li>É uma palavra reservada em JavaScript (exemplo: class).</li>
+                </ul>
+
+                <h3>Acessando propriedades usando colchetes</h3>
+                <p>Usado quando você precisa acessar propriedades dinamicamente, ou seja, o nome da propriedade não é um literal fixo, mas armazenado em uma variável ou definido como string. Além disso permite qualquer string como nome da propriedade, mesmo com caracteres especiais, espaços ou números.</p>
+                <h4>Com propriedade dinamica:</h4>
+                <iframe src="../iframes/estruturas_de_dados/usando_colchetes.html" frameborder="0"></iframe>
+                <h4>Com propriedades incomuns:</h4>
+                <iframe src="../iframes/estruturas_de_dados/usando_colchetes_2.html" frameborder="0"></iframe>
+
+                <p>Essa forma pode ser um pouco mais fléxivel pois nela você pode usar expressões ou variáveis para determinar o nome da propriedade.</p>
             </article>
 
         </section>
@@ -127,8 +150,30 @@
             </article>
             <article>
                 <h2>Métodos Básicos de Objetos</h2>
+
                 <ul>
-                    <li></li>
+                    <li>Object.assing()</li>
+                    <p>O Object.assign() adiciona as pripriedades de um objeto a outro objeto.</p>
+                    <iframe src="../iframes/estruturas_de_dados/exemplo_Object.assing().html" frameborder="0"></iframe>
+                    <p>O método vai funcionar com ou sem o objeto vazio no comeco.</p>
+                    <p>A forma que o Object.assign() funciona faz o ultimo objeto escrito nele passar suas propriedades para o anterior, isso acontece ate chegar no primeiro que passar todas as propriedades acumuladas pra onde você quer. Pórem o primeiro objeto tambem fica com as propriedas entao se voce nao colocar um objeto vazio primeiro, o objeto com certas propriedades ficara com todas e voce pode nao querer isso. EX: </p>
+                    <iframe src="../iframes/estruturas_de_dados/Object.assing()_2.html" frameborder="0"></iframe>
+                    <p>Nesse caso pessoa e o primeiro objeto a ser colocado, isso faz com que ele tenha todos as propriedades dos anteriores a ele, nesse caso o 'velho'.</p>
+                    <p>se mais de um objeto tiver uma propriedade com o mesmo nome, a prioridade  do valor que vai ser sobre escrito sera do ultimo com essa propriedade. EX:</p>
+                    <iframe src="../iframes/estruturas_de_dados/Object.assing()_3.html" frameborder="0"></iframe>
+                    <p><strong>OBS:</strong> É recomendado sempre colocar o objeto vazio no Object.assing para evitar problemas e ser mais organizado</p>
+                    <li>Object.entries()</li>
+
+                    <li>Object.freeze()</li>
+
+                    <li>Object.hasOwnProperty()</li>
+
+                    <li>Object.keys()</li>
+
+                    <li>Object.seal()</li>
+
+                    <li>Object.values()</li>
+
                 </ul>
             </article>
         </section>
