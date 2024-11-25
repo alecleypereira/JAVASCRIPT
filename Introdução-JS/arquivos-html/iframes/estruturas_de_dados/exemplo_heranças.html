@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heranças em js</title>
+</head>
+<body>
+    <pre>
+    const animal = {
+        tipo: 'mamifero' ,
+        som: function() {console.log('Fazer algum som)')}
+    }
+        
+    const cachoro = Object.create(animal)
+    cachoro.nome = 'Rex'
+    cachoro.latir = function(){console.log('Au..Au, Au..Au')}
+        
+    console.log(cachoro.nome) // Rex // propriedad propria do objeto.
+    console.log(cachoro.tipo) // mamifero // propriedade do prototipo (herdada do objeto animal).
+    cachoro.latir() // 'Au..Au, Au..Au''Au..Au, Au..Au' // método do proprio objeto.
+    cachoro.som() // 'Fazer alguma som' // método herdado do prototipo animal.
+    </pre>
+</body>
+</html>

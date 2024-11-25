@@ -156,26 +156,51 @@
                     <p>O Object.assign() adiciona as pripriedades de um objeto a outro objeto.</p>
                     <iframe src="../iframes/estruturas_de_dados/exemplo_Object.assing().html" frameborder="0"></iframe>
                     <p>O método vai funcionar com ou sem o objeto vazio no comeco.</p>
-                    <p>A forma que o Object.assign() funciona faz o ultimo objeto escrito nele passar suas propriedades para o anterior, isso acontece ate chegar no primeiro que passar todas as propriedades acumuladas pra onde você quer. Pórem o primeiro objeto tambem fica com as propriedas entao se voce nao colocar um objeto vazio primeiro, o objeto com certas propriedades ficara com todas e voce pode nao querer isso. EX: </p>
+                    <p>A forma que o Object.assign() funciona faz o ultimo objeto escrito nele passar suas propriedades para o anterior, isso acontece ate chegar no primeiro que passar todas as propriedades acumuladas pra onde você quer. Porém o primeiro objeto tambem fica com as propriedas entao se você não colocar um objeto vazio primeiro, o objeto com certas propriedades ficara com todas e você pode não querer isso. EX: </p>
                     <iframe src="../iframes/estruturas_de_dados/Object.assing()_2.html" frameborder="0"></iframe>
                     <p>Nesse caso pessoa e o primeiro objeto a ser colocado, isso faz com que ele tenha todos as propriedades dos anteriores a ele, nesse caso o 'velho'.</p>
                     <p>se mais de um objeto tiver uma propriedade com o mesmo nome, a prioridade  do valor que vai ser sobre escrito sera do ultimo com essa propriedade. EX:</p>
                     <iframe src="../iframes/estruturas_de_dados/Object.assing()_3.html" frameborder="0"></iframe>
                     <p><strong>OBS:</strong> É recomendado sempre colocar o objeto vazio no Object.assing para evitar problemas e ser mais organizado</p>
                     <li>Object.entries()</li>
-
+                    <p>O Object.entries() retorna um array de arrays que em cada sub-array tera um par de chaves com [[nome da propriedade], [valor dessa propriedade]].</p>
+                    <iframe src="../iframes/estruturas_de_dados/Object.entries().html" frameborder="0"></iframe>
                     <li>Object.freeze()</li>
-
+                    <p>O Object.freeze() congela o objeto, impedindo adição, remoção e modificação das propriedades do objeto.</p>
+                    <iframe src="../iframes/estruturas_de_dados/Object.freeze().html" frameborder="0"></iframe>
                     <li>Object.hasOwnProperty()</li>
+                    <p>O Object.hasownProperty() verifica se alguma propriedade com o nome que voce da.</p>
+                    <p>Porém só retorna true para propriedades não herdadas se você quiser ver se tem alguma mesmo que seja herdade use for in.</p>
+                    <iframe src="../iframes/estruturas_de_dados/Object.hasOwnProperty().html" frameborder="0"></iframe>
+                    <p>Propriedades herdadas são aquelas que não foram diretamente definidas no objeto, geralmente atravez de cadeias de protótipos (prototype chain) em JavaScript.</p>
 
                     <li>Object.keys()</li>
+                    <p>O Object.keys() retorna o nome das propriedades do objeto, dentro de um array.</p>
 
+                    <iframe src="../iframes/estruturas_de_dados/Object.keys().html" frameborder="0"></iframe>
                     <li>Object.seal()</li>
+                    <p>O Object.seal() sela o objeto impedindo remoção, adição porem deixando modificações.</p>
 
+                    <iframe src="../iframes/estruturas_de_dados/Object.seal().html" frameborder="0"></iframe>
                     <li>Object.values()</li>
+                    <p>O Object.values() retorna dentro de um array os valores das propriedades de um objeto</p>
+                    <iframe src="../iframes/estruturas_de_dados/Obejct.values().html" frameborder="0"></iframe>
+                    <li>Object.create()</li>
+                    <p>Se usa Obejct.create() para fazer um objeto ser prototipo de outro.</p>
+                    <iframe src="../iframes/estruturas_de_dados/Object.crate().html" frameborder="0"></iframe>
 
                 </ul>
             </article>
+            <article>
+                <h2>Heranças em JavaScript</h2>
+                <p>Em JavaScript, cada objeto tem um prótotipo (prototype), que é outro objeto do qual ele 'herda' propriedades e métodos. Quando você tenta acessar um propriedade ou método em um objeto, o JavaScript primeiro verificar se essa propriedade existe no proprio objeto. Se não encontrar , ele então procura no prototipo do objeto, e assim por diante até chegar no topo que é (Object.prototype).</p>
+                <iframe src="../iframes/estruturas_de_dados/exemplo_heranças.html" frameborder="0"></iframe>
+                <p><strong>OBS:</strong>Se você mudar algum protótipo os objetos que herdam dele também verão as mudanças.</p>
+                <p>E se você mudar uma propriedade ou método herdado no objeto, essa propriedade deixara de ser herdada e vai ser do proprio objeto e a propriedade do protótipo permanece inalterada</p>
+                <p>Se quiser "voltar" a usar a propriedade herdada, remova a propriedade própria com delete. E se você deletar a propridade no protótipo, ela é deletada do obejto que tinha ele como protótipo.</p>
+                <h2>This em JavaScript</h2>
+            </article>
+            <h1>escrever sobre for in etc</h1>
         </section>
     </main>
     <footer>

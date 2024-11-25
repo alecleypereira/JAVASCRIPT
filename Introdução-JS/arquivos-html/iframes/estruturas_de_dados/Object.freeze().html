@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object.freeze()</title>
+</head>
+<body>
+    <pre>
+    const pessoa = {nome:'joao'}
+    Object.freeze(pessoa)
+    pessoa.nome = 'Maria' // nao vai mudar o valor
+        
+    console.log(pessoa.nome) // Joao
+    </pre>
+</body>
+</html>
