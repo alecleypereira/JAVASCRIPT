@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object.setPrototypeOf()</title>
+</head>
+<body>
+    <pre>
+    let heranca = { tipo: "herdado", valor: 42 }
+    let objeto = { nome: "João", idade: 30 }
+    
+    for (let chave in objeto) {
+        if (!objeto.hasOwnProperty(chave)) {
+            console.log(`${chave} é herdada.`); // Exibe: tipo, valor
+        }
+     }
+        
+    </pre>
+</body>
+</html>

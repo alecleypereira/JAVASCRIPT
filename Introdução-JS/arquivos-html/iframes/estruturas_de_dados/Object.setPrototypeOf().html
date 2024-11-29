@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object.setPrototypeOf()</title>
+</head>
+<body>
+    <pre>
+    let heranca = { tipo: "herdado", valor: 42 };
+    let pessoa = { nome: "João", idade: 30 };
+
+    // Configurando o protótipo de 'pessoa' para ser 'heranca'
+    Object.setPrototypeOf(pessoa, heranca);
+
+    console.log(pessoa.tipo); // "herdado" (propriedade herdada de 'heranca')
+    console.log(pessoa.valor); // 42 (também herdada de 'heranca')
+    console.log(pessoa.nome);  // "João" (propriedade própria de 'pessoa')
+
+    </pre>
+</body>
+</html>

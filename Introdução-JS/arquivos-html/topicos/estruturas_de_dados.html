@@ -188,6 +188,11 @@
                     <li>Object.create()</li>
                     <p>Se usa Obejct.create() para fazer um objeto ser prototipo de outro.</p>
                     <iframe src="../iframes/estruturas_de_dados/Object.crate().html" frameborder="0"></iframe>
+                    <li>Object.setPrototypeOf()</li>
+                    <p>O método Object.setPrototypeOf(obj, prototype) serve para definir explicitamente o protótipo (ou herança) de um objeto. O objeto passado como primeiro argumento será o que receberá o segundo argumento como seu protótipo.</p>
+                    <iframe src="../iframes/estruturas_de_dados/Object.setPrototypeOf().html" frameborder="0"></iframe>
+                    <p>pessoa é o objeto que recebe o protótipo.</p>
+                    <p>heranca é o protótipo que fornece suas propriedades.</p>
 
                 </ul>
             </article>
@@ -199,8 +204,41 @@
                 <p>E se você mudar uma propriedade ou método herdado no objeto, essa propriedade deixara de ser herdada e vai ser do proprio objeto e a propriedade do protótipo permanece inalterada</p>
                 <p>Se quiser "voltar" a usar a propriedade herdada, remova a propriedade própria com delete. E se você deletar a propridade no protótipo, ela é deletada do obejto que tinha ele como protótipo.</p>
                 <h2>This em JavaScript</h2>
+                <p>O this no JavaScript é uma palavra-chave especial que referencia o contexto de execução atual, ou seja, o objeto ao qual a função está associada ou que a "invocou". O valor de this depende de como e onde a função é chamada.</p>
+                <p>No contexto global, fora de qualquer função ou objeto, o valor de this depende do ambiente:</p>
+                <ul>
+                    <li>Navedador:</li>
+                    <p>Em navegadores, this referencia o objeto global window.</p>
+                    <li>Node.js:</li>
+                    <p>Em módulos Node.js, this referencia o objeto module.exports.</p>
+                    <li>Dentro de uma função comum:</li>
+                    <p>this em funções regulares referencia o objeto global (como window no navegador).</p>
+                    <li>Como método de um objeto:</li>
+                    <p>Se a função é chamada como um método de um objeto, this referencia o objeto que chamou o método:</p>
+                    <iframe src="../iframes/estruturas_de_dados/This_1.html" frameborder="0"></iframe>
+                    <p>Se a função for atribuída a outra variável, ela perde o contexto original:</p>
+                    <iframe src="../iframes/estruturas_de_dados/This_2.html" frameborder="0"></iframe>
+                </ul>
             </article>
-            <h1>escrever sobre for in etc</h1>
+            <article>
+                <h2>For in</h2>
+                <p>O for in funciona em objetos não iteraveis (objetos normais e arrys) e ele serve para iterar com as chaves(Em array idices em objetos propriedades), valores e seu objeto.</p>
+                <iframe src="../iframes/estruturas_de_dados/for_in.html" frameborder="0"></iframe>
+                <p><strong>OBS:</strong>A palavra chave é configuravel, apenas a o nome do objeto não.</p>
+                <h2>For of</h2>
+                <p>For of serve para se usados em objetos iteraveis(objetos que não necessita passar por uma propriedade para acessar seus valores).</p>
+                <p>Sendo assim ele não itera sobre a propriedade, e sim sobre o valor e o objeto como o array ou uma string(que pode virar um objeto).</p>
+                <iframe src="../iframes/estruturas_de_dados/for_of.html" frameborder="0"></iframe>
+
+                <p>Exemplo com string:</p>
+                
+                <iframe src="../iframes/estruturas_de_dados/for_in_2.html" frameborder="0"></iframe>
+
+                <h3>Como ver se seu objeto tem propriedaades herdadas:</h3>
+                <p>Para verificar se uma propriedade é herdada, você pode combinar for...in com o método hasOwnProperty(), que retorna true apenas para propriedades próprias do objeto.</p>
+                <iframe src="../iframes/estruturas_de_dados/Object.setPrototypeOf()_2.html" frameborder="0"></iframe>
+                <p></p>
+            </article>
         </section>
     </main>
     <footer>
