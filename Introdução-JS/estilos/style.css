@@ -71,5 +71,9 @@ input.botao{
     border: 2px solid black;
     
 }
-
-
+button{
+    width: 70px;
+    height: 30px;
+    
+    border: 2px solid black;
+}
