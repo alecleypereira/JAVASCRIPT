@@ -49,12 +49,9 @@ section.item li{
 div.button{
     
 }
-div.button input{
-    width: 150px;
-    height: 40px;
-}
 
-button{
+
+button.botao{
     width: 150px;
     height: 40px;
 }
