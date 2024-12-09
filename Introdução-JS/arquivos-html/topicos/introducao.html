@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introdução ao JS</title>
+    <link rel="stylesheet" href="../../estilos/introdução/style.css">
+    <link rel="stylesheet" href="../../estilos/introdução/tablet.css" media="(min-width:769px) and (max-width:999px)">
+    <link rel="stylesheet" href="../../estilos/introdução/desktop.css" media="(min-width:1000px)">
+
 </head>
-<style>
-    iframe{
-        height: 100px;
-        width: 200px;
-        
-    }
-</style>
 <body>
+
+    <div id="ham-button_1">
+        <button><img src="../../imagens/menu_1.png" alt="botão lateral com opções"></button>
+    </div>
     <header> 
-        <h1>Introdução ao JS</h1>
+        <h1>Introdução ao JavaScript</h1>
     </header>
+    
     <main>
+        
         <section>
             <article>
                 <h2>JavaScript</h2>
@@ -27,32 +30,33 @@
 
                 <p>JavaScript foi criado por Brendan Eich em 1995 enquanto ele trabalhava na Netscape Communications Corporation. Originalmente, foi desenvolvido em apenas 10 dias e foi chamado de "Mocha", depois "LiveScript" e, finalmente, "JavaScript". A intenção era criar uma linguagem de script que pudesse ser usada tanto por programadores experientes quanto por iniciantes para desenvolver páginas web interativas.</p>
             </article>
-            <article>
-             <h2>Envolvimento com o ECMAScript</h2>
+            <article id="topico_1">
+                <h2>Envolvimento com o ECMAScript</h2>
 
-            <p>Em 1996, para evitar uma guerra de padrões e garantir a interoperabilidade entre diferentes navegadores, a Netscape submeteu JavaScript à Ecma International (European Computer Manufacturers Association). A linguagem foi padronizada sob o nome ECMAScript. O ECMAScript é a especificação oficial da linguagem, e JavaScript é a implementação mais popular dessa especificação.</p>
+                <p>Em 1996, para evitar uma guerra de padrões e garantir a interoperabilidade entre diferentes navegadores, a Netscape submeteu JavaScript à Ecma International (European Computer Manufacturers Association). A linguagem foi padronizada sob o nome ECMAScript. O ECMAScript é a especificação oficial da linguagem, e JavaScript é a implementação mais popular dessa especificação.</p>
 
-            <h2>Evolução do ECMAScript</h2<p>Desde a sua padronização inicial, o ECMAScript passou por várias revisões importantes:</p>
-            <ul>
-                <li>ECMAScript 1 (1997):Primeira edição.</li>
-                <li>ECMAScript 3 (1999): Amplamente adotada e usada por vários anos.</li>
-                <li>ECMAScript 5 (2009): Introduziu várias melhorias e novas funcionalidades.</li>
-                <li>ECMAScript 6 (2015): Também conhecido como ECMAScript 2015 ou ES6, trouxe uma grande quantidade de novas funcionalidades e melhorias, marcando uma evolução significativa da linguagem.             </li>
-                <li>Atualizações anuais: Desde ES6, a especificação do ECMAScript é atualizada anualmente com novas funcionalidades e melhorias incrementais.</li>
-            </ul>
-            </article>
-            <article>
+                <h2>Evolução do ECMAScript</h2>
+                    <p>Desde a sua padronização inicial, o ECMAScript passou por várias revisões importantes:</p>
+                <ul>
+                    <li>ECMAScript 1 (1997):Primeira edição.</li>
+                    <li>ECMAScript 3 (1999): Amplamente adotada e usada por vários anos.</li>
+                    <li>ECMAScript 5 (2009): Introduziu várias melhorias e novas funcionalidades.</li>
+                    <li>ECMAScript 6 (2015): Também conhecido como ECMAScript 2015 ou ES6, trouxe uma grande quantidade de novas funcionalidades e  melhorias, marcando uma evolução significativa da linguagem.             </li>
+                    <li>Atualizações anuais: Desde ES6, a especificação do ECMAScript é atualizada anualmente com novas funcionalidades e melhorias incrementais.</li>
+                </ul>
+            
+            
                 <h2>Mozilla e o Firefox</h2>
 
                 <p>Mozilla tem sido uma força motriz na promoção e desenvolvimento de JavaScript através do seu navegador Firefox. O motor JavaScript do Firefox, conhecido como SpiderMonkey, foi o primeiro motor JavaScript, criado originalmente por Brendan Eich na Netscape. A Mozilla continua a contribuir significativamente para o avanço da linguagem JavaScript e da especificação ECMAScript através de suas iniciativas e participação em grupos de padronização.</p>
-
+            
                 <h2>Comitê TC39</h2>
 
                 <ul>
                 <li>TC39: O Comitê Técnico 39 da Ecma International é responsável pela padronização da linguagem ECMAScript (JavaScript). O TC39 é composto por membros de várias empresas e organizações, incluindo Mozilla, Google, Microsoft, Apple, entre outras.</li>
             </ul>
             </article>
-            <article>
+            <article id="topico_2">
                 <h2>Node.Js</h2>
 
                 <p>Node.js é um ambiente de execução JavaScript no lado do servidor criado por Ryan Dahl em 2009. Ele usa o motor V8 do Google e é conhecido por sua arquitetura event-driven e operações de I/O não bloqueantes, tornando-o ideal para aplicações que exigem alta performance em operações I/O intensivas.</p>
@@ -64,40 +68,41 @@
                     <li>Ferramentas de Desenvolvimento: Amplamente usado para construir ferramentas e utilitários de desenvolvimento.</li>
                 </ul>
             </article>
-            <article>
+            <article id="topico_3">
                 <h2>Variáveis</h2>
 
                 <p>Variáveis são um conceito que normalmente se tem dificuldade de aprender no início, porém só é necessário entender como elas funcionam. Uma variável pode ser interpretada como uma caixa, e nessa caixa você pode guardar coisas; essas coisas podem ser de tudo: uma coordenada, um valor, um texto, etc. No JS, cada coisa que você guarda nessa caixa tem um tipo. Por exemplo, um valor pode ter o tipo Number. Não se preocupe, o próprio JS determina esse tipo. Veja este exemplo:</p>
-                <iframe src="../iframes/introducao/variavel_ex.html" frameborder="0"></iframe>
+                <div class="iframes"> 
+                    <iframe src="../iframes/introducao/variavel_ex.html" frameborder="0"></iframe>
+                </div>
 
                 <p>definir a variável usando “var”, logo apos adicionamos o identificador que queremos dar a variável depois colocamos algo nela usando um operador de atribuição como “=”</p>
 
                 <p>Assim, temos uma variável com o identificador "nome" que contém uma string (texto) "alecley". Existem outras formas de declarar uma variável; neste caso, usamos o var, mas cada forma tem sua função.</p>
 
-            </article>
-            <article>
+            
                 <h2>Tipos de Declaração em JavaScript</h2>
 
-                <ol>
-                    <li>`var`</li>
+                
+                    <h3>`var`</h3>     
                         <ul>
                             <li>Escopo: Funciona dentro do contexto de uma função ou globalmente.</li>
                             <li>Re-declarável: Pode ser redeclarada e redefinida.</li>
                             <li>Uso: Menos comum em código moderno devido a problemas com escopo.</li>
                         </ul>
-                    <li>`let`</li>
+                    <h3>`let`</h3>     
                         <ul>
                             <li>Escopo: Funciona dentro do bloco onde é declarada (bloco, função, global).</li>
                             <li>Re-declarável: Não pode ser redeclarada no mesmo escopo.</li>
                             <li>Uso: Recomendada para variáveis que irão mudar de valor.</li>
                         </ul>
-                    <li>`const`</li>
+                    <h3>`const`</h3>    
                         <ul>
                             <li>Escopo: Igual ao `let` (bloco, função, global).</li>
                             <li>Constante: Não pode ser redefinida após a atribuição inicial.</li>
                             <li>Uso: Recomendada para valores que não devem mudar.</li>
                         </ul>
-                </ol>
+                
                 <p>OBS: Escopo é onde podemos chamar a variável.</p>
 
                 <p>Os nomes dados as variáveis são chamados de identificadores e eles tem regras para a sua nomenclatura:</p>
@@ -115,6 +120,6 @@
             </article>
         </section>
     </main>
-    <footer></footer>
+    <footer>Criador do Site  <a href="https://github.com/alecleypereira" target="_blank"><strong>alecley Pereira</strong></a></footer>
 </body>
 </html>
