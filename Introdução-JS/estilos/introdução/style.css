@@ -63,6 +63,13 @@ div#ham-button_1 button img{
     width: 50px;
 }
 
+div#button-flex{
+    display: flex;
+}
+div.button-2{
+    margin: auto;
+    /*ver se colocar configs adicionais nos filhos*/
+}
     /*botoes hamburguers*/
 
 
