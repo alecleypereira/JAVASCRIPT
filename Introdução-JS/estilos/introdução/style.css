@@ -72,36 +72,55 @@ div.button-2{
 }
     /*menu hamburguers*/
     div.off-screen-menu{
-        background-color: rgb(36, 33, 33);
+        background-color: rgb(168, 152, 167);
         color: rgb(0, 0, 0);
         border-radius:0px 0px 7px 7px ;
-        height: 60vh;
+        height: 70vh;
         width: 100vw;
         position: fixed;
         top: 0px;
         right: ;
         line-height: 30px;
-        display: non;
+        display:none;
     }
+
+    img.img-menu{
+        height: 35px;
+        width: 35px;
+        
+    }
+
     div.off-screen-menu ul{
         text-align: center;
         width: 100%;
+        font-size: 20px;
         
         
     }
     div.off-screen-menu ul li{
        background-color: white;
        border-radius: 5px;
+       width: ;
        margin-top: 5px;
        list-style: none;
        margin-right: ;
        width:200px ;
-       margin: 5px auto;
+       margin: 15px auto;
+       padding: 6px 50px;
+       font-weight:600;
+       text-shadow: 0px 5px 8px 5px rgba(0, 0, 0, 0.877);
+    
+
       
        
 
         
     }
+    div.off-screen-menu ul li:hover {
+        padding: 8px 60px;
+        box-shadow:0px 5px 8px 5px rgba(0, 0, 0, 0.329);
+    }
+
 
     /*listas*/
 ul li{
