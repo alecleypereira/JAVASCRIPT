@@ -16,12 +16,24 @@
 
         <img src="../../imagens/menu_1.png" alt="ham-menu" class="img-menu" onclick="menu()">
         <ul>
-            <li>Tipos de Dados</li>
-            <li>Operadores</li>
-            <li>Funções</li>
-            <li>Estruturas de Controle</li>
-            <li>Estruturas de Dados</li>
-            <li>Voltar</li>
+            <a href="../topicos/tipos_de_dados.html">
+                <li>Tipos de Dados</li>
+            </a>
+            <a href="../topicos/Operadores.html">
+                <li>Operadoes</li>
+            </a>
+            <a href="../topicos/funcoes.html">
+                <li>Funções</li>
+            </a>
+            <a href="../topicos/estruturas_de_controle.html">
+                <li>Estruturas de Controle</li>
+            </a>
+            <a href="../topicos/estruturas_de_dados.html">
+                <li>Estruturas de Dados</li>
+            </a>
+            <a href="../topicos/index.html">
+                <li>Voltar</li>
+            </a>
         </ul>
     </div>
     <header> 
@@ -30,12 +42,15 @@
     
     <main>
         <div id="button-flex">
-            <div class="button-2"><button>top1</button></div>
-            <div class="button-2"><button>top2</button></div>
-            <div class="button-2"><button>top3</button></div>
+            <div class="button-topicos"><button onclick="topico_1()" >Introdução</button></div>
+
+            <div class="button-topicos"><button onclick="topico_2()" >Node.js</button></div>
+
+            <div class="button-topicos" onclick="topico_3()" ><button>Principio</button></div>
+
         </div>
         <section>
-            <article>
+            <article id="topico-0">
                 <h2>JavaScript</h2>
 
                 <p>JavaScript foi criado para ser uma linguagem de programação focada no desenvolvimento web. Com ela, é possível criar interatividade, animações, validação de formulários, entre outras funcionalidades de forma fácil.</p>
@@ -44,7 +59,7 @@
 
                 <p>JavaScript foi criado por Brendan Eich em 1995 enquanto ele trabalhava na Netscape Communications Corporation. Originalmente, foi desenvolvido em apenas 10 dias e foi chamado de "Mocha", depois "LiveScript" e, finalmente, "JavaScript". A intenção era criar uma linguagem de script que pudesse ser usada tanto por programadores experientes quanto por iniciantes para desenvolver páginas web interativas.</p>
             </article>
-            <article id="topico_1">
+            <article id="topico-1">
                 <h2>Envolvimento com o ECMAScript</h2>
 
                 <p>Em 1996, para evitar uma guerra de padrões e garantir a interoperabilidade entre diferentes navegadores, a Netscape submeteu JavaScript à Ecma International (European Computer Manufacturers Association). A linguagem foi padronizada sob o nome ECMAScript. O ECMAScript é a especificação oficial da linguagem, e JavaScript é a implementação mais popular dessa especificação.</p>
@@ -70,7 +85,7 @@
                 <li>TC39: O Comitê Técnico 39 da Ecma International é responsável pela padronização da linguagem ECMAScript (JavaScript). O TC39 é composto por membros de várias empresas e organizações, incluindo Mozilla, Google, Microsoft, Apple, entre outras.</li>
             </ul>
             </article>
-            <article id="topico_2">
+            <article id="topico-2">
                 <h2>Node.Js</h2>
 
                 <p>Node.js é um ambiente de execução JavaScript no lado do servidor criado por Ryan Dahl em 2009. Ele usa o motor V8 do Google e é conhecido por sua arquitetura event-driven e operações de I/O não bloqueantes, tornando-o ideal para aplicações que exigem alta performance em operações I/O intensivas.</p>
@@ -82,7 +97,7 @@
                     <li>Ferramentas de Desenvolvimento: Amplamente usado para construir ferramentas e utilitários de desenvolvimento.</li>
                 </ul>
             </article>
-            <article id="topico_3">
+            <article id="topico-3">
                 <h2>Variáveis</h2>
 
                 <p>Variáveis são um conceito que normalmente se tem dificuldade de aprender no início, porém só é necessário entender como elas funcionam. Uma variável pode ser interpretada como uma caixa, e nessa caixa você pode guardar coisas; essas coisas podem ser de tudo: uma coordenada, um valor, um texto, etc. No JS, cada coisa que você guarda nessa caixa tem um tipo. Por exemplo, um valor pode ter o tipo Number. Não se preocupe, o próprio JS determina esse tipo. Veja este exemplo:</p>
