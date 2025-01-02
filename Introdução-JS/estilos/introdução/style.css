@@ -12,7 +12,9 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
+h1{text-shadow:2px 2px rgba(0, 0, 0, 0.233) ;}
+h2{text-shadow: 2px 2px rgba(0, 0, 0, 0.201);}
+h3{text-shadow:2px 2px rgba(0, 0, 0, 0.158) ;}
 main{
     background-color: rgba(168, 152, 167, 0.877) ;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.301);
@@ -36,11 +38,6 @@ p{
 }
 
     /* display dos topicos*/
-article#topico_1{       }
-
-article#topico_2{      }
-
-article#topico_3{        }
 
     /*iframes*/
 iframe{
@@ -74,6 +71,7 @@ div.button-2{
     div.off-screen-menu{
         background-color: rgb(168, 152, 167);
         color: rgb(0, 0, 0);
+        box-shadow: 0px 3px 13px 2px rgba(0, 0, 0, 0.329);
         border-radius:0px 0px 7px 7px ;
         height: 70vh;
         width: 100vw;
@@ -85,6 +83,13 @@ div.button-2{
 
     div.off-screen-menu ul a{
         text-decoration: none;
+        
+        width: 200px;
+        height: 30px;
+    }
+    div.off-screen-menu ul a li{
+        width: 200px;
+        
     }
     img.img-menu{
         height: 35px;
@@ -102,10 +107,10 @@ div.button-2{
     div.off-screen-menu ul li{
        background-color: white;
        border-radius: 5px;
-       width: ;
+       
        margin-top: 5px;
        list-style: none;
-       margin-right: ;
+       
        width:200px ;
        margin: 15px auto;
        padding: 6px 50px;
@@ -143,13 +148,25 @@ ul li{
 
     /*rodape*/
 footer{
+  
     text-align: center;
     color: white;
     padding-top:3px;
     margin-top:15px;
     background-color:  rgb(22, 17, 22) ;
+    
 }
 footer strong{
     color: white;
     bottom: 0px;
+   
+}
+#cabecalho{
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+}
+#espacador{
+    flex: 1;
+    
 }
