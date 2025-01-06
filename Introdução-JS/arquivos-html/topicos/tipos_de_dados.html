@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tipos de Dados</title>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <header>
@@ -11,7 +13,7 @@
     </header>
     <main>
         <section>
-            <article>
+            <article id="topico-1">
                 <p>No JavaScript, um dos aspectos fundamentais da programação é a manipulação de dados. Os dados representam as informações que um programa processa e pode se manifestar de diversas formas. No contexto do JavaScript, os tipos de dados definem a natureza dos valores que uma variável pode armazenar e como esses valores são tratados pelo código.</p>
 
                 <p>JavaScript é uma linguagem de tipagem dinâmica, o que significa que você não precisa especificar o tipo de dados ao declarar uma variável; o tipo é determinado automaticamente com base no valor atribuído. Existem dois principais grupos de tipos de dados em JavaScript: tipos primitivos e tipos de objeto.</p>
@@ -34,7 +36,7 @@
                     <iframe src="../iframes/tipos_de_dados/BigInt.html" frameborder="0"></iframe>
                 </ul>
             </article>
-            <article>
+            <article id="topico-2">
                 <h2>Os tipos de objeto incluem:</h2>
                 <ul>
                     <li>Object: Representa uma coleção de pares chave-valor, podendo armazenar múltiplos valores em uma estrutura complexa.</li>
@@ -44,27 +46,27 @@
                 </ul>
              <h2>Arrays</h2>
 
-            <p>Arrays são uma forma especial de objeto que armazena uma lista ordenada de valores.</p>
-            <iframe src="../iframes/tipos_de_dados/Array.html" frameborder="0"></iframe>
+                <p>Arrays são uma forma especial de objeto que armazena uma lista ordenada de valores.</p>
+                <iframe src="../iframes/tipos_de_dados/Array.html" frameborder="0"></iframe>
 
-            <h2>Object</h2>
+                <h2>Object</h2>
 
-            <p>Objetos em JavaScript são coleções de pares chave-valor, permitindo armazenar múltiplos valores e propriedades. Um objeto pode ser criado usando a notação de chaves `{}`.</p>
-            <iframe src="../iframes/tipos_de_dados/Object.html" frameborder="0"></iframe>
+                <p>Objetos em JavaScript são coleções de pares chave-valor, permitindo armazenar múltiplos valores e propriedades. Um objeto pode ser criado usando a notação de chaves `{}`.</p>
+                <iframe src="../iframes/tipos_de_dados/Object.html" frameborder="0"></iframe>
 
-             <h2>Function</h2>
+                <h2>Function</h2>
 
-            <p>Funções também são objetos em JavaScript e podem ser armazenadas em variáveis, passadas como argumentos e retornadas de outras funções.</p>
-            <iframe src="../iframes/tipos_de_dados/Function.html" frameborder="0"></iframe>
+                <p>Funções também são objetos em JavaScript e podem ser armazenadas em variáveis, passadas como argumentos e retornadas de outras funções.</p>
+                <iframe src="../iframes/tipos_de_dados/Function.html" frameborder="0"></iframe>
 
-             <h2>Date e RegExp</h2>
+                <h2>Date e RegExp</h2>
 
-            <p>Objetos `Date` são usados para manipular datas e horas, enquanto `RegExp` são usados para trabalhar com expressões regulares.</p>
-            <iframe src="../iframes/tipos_de_dados/Date_e_RegExp.html" frameborder="0"></iframe>
+                <p>Objetos `Date` são usados para manipular datas e horas, enquanto `RegExp` são usados para trabalhar com expressões regulares.</p>
+                <iframe src="../iframes/tipos_de_dados/Date_e_RegExp.html" frameborder="0"></iframe>
             </article>
         </section>
         <section>
-            <article>
+            <article id="topico-3">
                 <h2>Tipagem Dinâmica</h2>
 
                 <p>JavaScript é uma linguagem de tipagem dinâmica, o que significa que você não precisa declarar explicitamente o tipo de uma variável. O tipo é determinado automaticamente com base no valor atribuído. Isso permite flexibilidade, mas também pode levar a comportamentos inesperados. Por exemplo, uma variável pode começar como um número e, em seguida, receber um valor de string:</p>
@@ -119,7 +121,7 @@
 
                 <p>OBS:  A coerção é um artifício do javaScript que pode agir de forma não intuitivas por isso não se recomendar confiar nele e sim desenvolver seu código para que ele funcione sem a dependência desse artifício evitando possíveis bugs.</p>
             </article>
-            <article>
+            <article id="topico-4">
                 <h2>Conversão de Tipos:</h2>
 
                 <p>JavaScript pode realizar conversões de tipos (ou coerção) tanto de forma implícita quanto explícita. A coerção implícita ocorre quando o JavaScript automaticamente converte um tipo para outro, enquanto a coerção explícita é feita pelo programador usando funções como `Number()`, `String()`, e `Boolean()`.</p>
