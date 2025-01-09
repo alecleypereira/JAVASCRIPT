@@ -11,10 +11,8 @@ body{
    
     font-family: Arial, Helvetica, sans-serif;
 }
+    
 
-h1{text-shadow:2px 2px rgba(0, 0, 0, 0.233) ;}
-h2{text-shadow: 2px 2px rgba(0, 0, 0, 0.201);}
-h3{text-shadow:2px 2px rgba(0, 0, 0, 0.158) ;}
 main{
     background-color: rgba(168, 152, 167, 0.877) ;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.301);
@@ -22,8 +20,10 @@ main{
     width: 100%; 
     border-radius: 20px;
 }
+    /*titulos*/
 h1{
     margin: 10px;
+    text-shadow:2px 2px rgba(0, 0, 0, 0.233) ;
 }
 h1, h2{
     
@@ -31,14 +31,18 @@ h1, h2{
     line-height: 40px;
 
 }
+h2{text-shadow: 2px 2px rgba(0, 0, 0, 0.201);}
+h3{text-shadow:2px 2px rgba(0, 0, 0, 0.158) ;}
+
+
 
 p{
     line-height: 25px;
     margin: 15px;
+    text-align: justify;
 }
 
-    /* display dos topicos*/
-
+   
     /*iframes*/
 iframe{
     color: white;
@@ -50,94 +54,85 @@ div.iframes{
     text-align: center;
 }
 
-    /*botoes*/
-div#ham-button_1 button{
-    margin: 5px 0px 0px 5px;
-    border-radius: 5px;
+    
+    /*imagem menu com onclick*/
+img.img-menu{
+        height: 35px;
+        width: 35px;
 }
-div#ham-button_1 button img{
-    height: 50px;
-    width: 50px;
+    /*menu hamburguer*/
+div.off-screen-menu{
+    overflow-y:auto;
+    position: fixed;
+    background-color: rgb(168, 152, 167);
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 3px 13px 2px rgba(0, 0, 0, 0.329);
+    border-radius:0px 0px 7px 7px ;
+    height: 80vh;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    line-height: 30px;
+    display:none;
 }
 
+div.off-screen-menu ul a{
+    text-decoration: none;
+        
+    width: 200px;
+    height: 30px;
+    }
+div.off-screen-menu ul a li{
+    width: 200px;
+        
+    }
+    
+    
+div.off-screen-menu ul{
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+        
+        
+    }
+div.off-screen-menu ul li{
+    background-color: white;
+    border-radius: 5px;
+       
+    margin-top: 5px;
+    list-style: none;
+       
+    width:200px ;
+    margin: 15px auto;
+    padding: 6px 50px;
+    font-weight:600;
+    text-shadow: 0px 5px 8px 5px rgba(0, 0, 0, 0.877);
+   
+    }
+div.off-screen-menu ul li:hover {
+    padding: 8px 60px;
+    box-shadow:0px 5px 8px 5px rgba(0, 0, 0, 0.329);
+    }
+
+    /*div pai dos butoes topicos*/
 div#button-flex{
     display: flex;
 }
-div.button-2{
-    margin: auto;
-    /*ver se colocar configs adicionais nos filhos*/
-}
-    /*menu hamburguers*/
-    div.off-screen-menu{
-        background-color: rgb(168, 152, 167);
-        color: rgb(0, 0, 0);
-        box-shadow: 0px 3px 13px 2px rgba(0, 0, 0, 0.329);
-        border-radius:0px 0px 7px 7px ;
-        height: 70vh;
-        width: 100vw;
-        position: fixed;
-        top: 0px;
-        line-height: 30px;
-        display:none;
-    }
-
-    div.off-screen-menu ul a{
-        text-decoration: none;
-        
-        width: 200px;
-        height: 30px;
-    }
-    div.off-screen-menu ul a li{
-        width: 200px;
-        
-    }
-    img.img-menu{
-        height: 35px;
-        width: 35px;
-        
-    }
-
-    div.off-screen-menu ul{
-        text-align: center;
-        width: 100%;
-        font-size: 20px;
-        
-        
-    }
-    div.off-screen-menu ul li{
-       background-color: white;
-       border-radius: 5px;
-       
-       margin-top: 5px;
-       list-style: none;
-       
-       width:200px ;
-       margin: 15px auto;
-       padding: 6px 50px;
-       font-weight:600;
-       text-shadow: 0px 5px 8px 5px rgba(0, 0, 0, 0.877);
-   
-    }
-    div.off-screen-menu ul li:hover {
-        padding: 8px 60px;
-        box-shadow:0px 5px 8px 5px rgba(0, 0, 0, 0.329);
-    }
-
     /*botoes topicos*/
-    div.button-topicos{
-        margin: auto;
+div.button-topicos{
+    margin: auto;
         
     }
-    div.button-topicos button{
-        margin: 5px;
-        height:20px;
-        width: 80px; 
+div.button-topicos button{
+    margin: 5px;
+    height:20px;
+    width: 80px; 
         
     }
 
-    div.button-topicos button:hover{
-        padding: 0px 2px 2px 2px;
-        box-shadow: 0px 3px 8px 1px rgba(0, 0, 0, 0.329);
+div.button-topicos button:hover{
+    padding: 0px 2px 2px 2px;
+    box-shadow: 0px 3px 8px 1px rgba(0, 0, 0, 0.329);
     }   
 
 

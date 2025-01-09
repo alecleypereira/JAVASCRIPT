@@ -5,14 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tipos de Dados</title>
     <link rel="stylesheet" href="../../estilos/tipos-de-dados/style.css">
-    <link rel="stylesheet" href="../../estilos/tipos-de-dados/tablet.css">
-    <link rel="stylesheet" href="../../estilos/tipos-de-dados/desktop.css">
+    <link rel="stylesheet" href="../../estilos/tipos-de-dados/tablet.css" media="(min-width:720px) and (max-width:999px)">
+    <link rel="stylesheet" href="../../estilos/tipos-de-dados/desktop.css" media="(min-width:1000px)">
+    <script src="../../arquivos-js/tipos-de-dados/topicos.js"></script>
 </head>
 <body>
+    <img src="../../imagens/menu_1.png" alt="menu-laateral" class="img-menu"  onclick="menu()">
+    <div class="off-screen-menu">
+        <img src="../../imagens/menu_1.png" alt="menu-lateral" class="img-menu" onclick="menu()">
+        <ul>
+            <a href="../topicos/introducao.html">
+                <li>Introdução</li>
+            </a>
+            <a href="../topicos/Operadores.html">
+                <li>Operadoes</li>
+            </a>
+            <a href="../topicos/funcoes.html">
+                <li>Funções</li>
+            </a>
+            <a href="../topicos/estruturas_de_controle.html">
+                <li>Estruturas de Controle</li>
+            </a>
+            <a href="../topicos/estruturas_de_dados.html">
+                <li>Estruturas de Dados</li>
+            </a>
+            <a href="../topicos/index.html">
+                <li>Voltar</li>
+            </a>
+        </ul>
+    </div>
     <header>
         <h1>Tipos de Dados</h1>
     </header>
+
     <main>
+        <div id="button-flex">
+            <div class="button-topicos"> <button onclick="topico_1()">Primitivos</button> </div>
+            <div class="button-topicos"> <button onclick="topico_2()">Objetos</button> </div>
+            <div class="button-topicos"> <button onclick="topico_3()">Tipagens</button> </div>
+            <div class="button-topicos"> <button onclick="topico_4()">Conversão</button> </div>
+        </div>
         <section>
             <article id="topico-1">
                 <p>No JavaScript, um dos aspectos fundamentais da programação é a manipulação de dados. Os dados representam as informações que um programa processa e pode se manifestar de diversas formas. No contexto do JavaScript, os tipos de dados definem a natureza dos valores que uma variável pode armazenar e como esses valores são tratados pelo código.</p>
@@ -21,19 +53,19 @@
 
                 <h2>Os tipos primitivos incluem:</h2>
                 <ul>
-                    <li>Number: Representa números, tanto inteiros quanto flutuantes.</li>
-                    <iframe src="../iframes/tipos_de_dados/Number.html" frameborder="0"></iframe> 
-                    <li>String: Representa cadeias de caracteres.</li> 
-                    <iframe src="../iframes/tipos_de_dados/String.html" frameborder="0"></iframe>
-                    <li>Boolean: Representa valores lógicos, verdadeiro (true) ou falso (false)</li>
-                    <iframe src="../iframes/tipos_de_dados/Boolean.html" frameborder="0"></iframe> 
-                    <li>Undefined: Representa uma variável que foi declarada, mas ainda não possui valor atribuído.</li> 
+                    <li><strong>Number:</strong>  Representa números, tanto inteiros quanto flutuantes.</li>
+                    <div class="iframes"><iframe src="../iframes/tipos_de_dados/Number.html" frameborder="0"></iframe> </div>
+                    <li><strong>String:</strong>  Representa cadeias de caracteres.</li> 
+                    <div class="iframes"><iframe src="../iframes/tipos_de_dados/String.html" frameborder="0"></iframe></div>
+                    <li><strong>Boolean:</strong>  Representa valores lógicos, verdadeiro (true) ou falso (false)</li>
+                    <div class="iframes"><iframe src="../iframes/tipos_de_dados/Boolean.html" frameborder="0"></iframe> </div>
+                    <li><strong>Undefined:</strong>  Representa uma variável que foi declarada, mas ainda não possui valor atribuído.</li> 
                     <iframe src="../iframes/tipos_de_dados/Undefined.html" frameborder="0"></iframe>
-                    <li>Null: Representa a ausência intencional de valor.</li>
+                    <li><strong>Null:</strong>  Representa a ausência intencional de valor.</li>
                     <iframe src="../iframes/tipos_de_dados/Null.html" frameborder="0"></iframe> 
-                    <li>Symbol: Introduzido no ECMAScript 6, representa um valor único e imutável.</li> 
+                    <li><strong>Symbol:</strong>  Introduzido no ECMAScript 6, representa um valor único e imutável.</li> 
                     <iframe src="../iframes/tipos_de_dados/Symbol.html" frameborder="0"></iframe>
-                    <li>BigInt: Representa números inteiros de tamanho arbitrário, útil para operações que envolvem números muito grandes.</li>
+                    <li><strong>BigInt:</strong>  Representa números inteiros de tamanho arbitrário, útil para operações que envolvem números muito grandes.</li>
                     <iframe src="../iframes/tipos_de_dados/BigInt.html" frameborder="0"></iframe>
                 </ul>
             </article>
