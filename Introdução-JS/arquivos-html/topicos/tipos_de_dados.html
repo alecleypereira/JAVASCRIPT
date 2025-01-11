@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="../../estilos/tipos-de-dados/style.css">
     <link rel="stylesheet" href="../../estilos/tipos-de-dados/tablet.css" media="(min-width:720px) and (max-width:999px)">
     <link rel="stylesheet" href="../../estilos/tipos-de-dados/desktop.css" media="(min-width:1000px)">
+    <link rel="stylesheet" href="../../estilos/iframes.css">
     <script src="../../arquivos-js/tipos-de-dados/topicos.js"></script>
+    
 </head>
 <body>
     <img src="../../imagens/menu_1.png" alt="menu-laateral" class="img-menu"  onclick="menu()">
@@ -60,13 +62,13 @@
                     <li><strong>Boolean:</strong>  Representa valores lógicos, verdadeiro (true) ou falso (false)</li>
                     <div class="iframes"><iframe src="../iframes/tipos_de_dados/Boolean.html" frameborder="0"></iframe> </div>
                     <li><strong>Undefined:</strong>  Representa uma variável que foi declarada, mas ainda não possui valor atribuído.</li> 
-                    <iframe src="../iframes/tipos_de_dados/Undefined.html" frameborder="0"></iframe>
+                    <div class="iframes"><iframe src="../iframes/tipos_de_dados/Undefined.html" frameborder="0"></iframe></div>
                     <li><strong>Null:</strong>  Representa a ausência intencional de valor.</li>
-                    <iframe src="../iframes/tipos_de_dados/Null.html" frameborder="0"></iframe> 
+                    <div class="iframes"><iframe src="../iframes/tipos_de_dados/Null.html" frameborder="0"></iframe> </div>
                     <li><strong>Symbol:</strong>  Introduzido no ECMAScript 6, representa um valor único e imutável.</li> 
-                    <iframe src="../iframes/tipos_de_dados/Symbol.html" frameborder="0"></iframe>
+                    <div class="iframes"><iframe src="../iframes/tipos_de_dados/Symbol.html" frameborder="0"></iframe></div>
                     <li><strong>BigInt:</strong>  Representa números inteiros de tamanho arbitrário, útil para operações que envolvem números muito grandes.</li>
-                    <iframe src="../iframes/tipos_de_dados/BigInt.html" frameborder="0"></iframe>
+                    <div class="iframes"><iframe src="../iframes/tipos_de_dados/BigInt.html" frameborder="0"></iframe></div>
                 </ul>
             </article>
             <article id="topico-2">
@@ -80,22 +82,22 @@
              <h2>Arrays</h2>
 
                 <p>Arrays são uma forma especial de objeto que armazena uma lista ordenada de valores.</p>
-                <iframe src="../iframes/tipos_de_dados/Array.html" frameborder="0"></iframe>
+                <div class="iframes"><iframe src="../iframes/tipos_de_dados/Array.html" frameborder="0"></iframe></div>
 
                 <h2>Object</h2>
 
                 <p>Objetos em JavaScript são coleções de pares chave-valor, permitindo armazenar múltiplos valores e propriedades. Um objeto pode ser criado usando a notação de chaves `{}`.</p>
-                <iframe src="../iframes/tipos_de_dados/Object.html" frameborder="0"></iframe>
+                <div class="iframes"><iframe src="../iframes/tipos_de_dados/Object.html" frameborder="0"></iframe></div>
 
                 <h2>Function</h2>
 
                 <p>Funções também são objetos em JavaScript e podem ser armazenadas em variáveis, passadas como argumentos e retornadas de outras funções.</p>
-                <iframe src="../iframes/tipos_de_dados/Function.html" frameborder="0"></iframe>
+                <div class="iframes"><iframe src="../iframes/tipos_de_dados/Function.html" frameborder="0"></iframe></div>
 
                 <h2>Date e RegExp</h2>
 
                 <p>Objetos `Date` são usados para manipular datas e horas, enquanto `RegExp` são usados para trabalhar com expressões regulares.</p>
-                <iframe src="../iframes/tipos_de_dados/Date_e_RegExp.html" frameborder="0"></iframe>
+                <div class="iframes"><iframe src="../iframes/tipos_de_dados/Date_e_RegExp.html" frameborder="0"></iframe></div>
             </article>
         </section>
         <section>
@@ -103,7 +105,7 @@
                 <h2>Tipagem Dinâmica</h2>
 
                 <p>JavaScript é uma linguagem de tipagem dinâmica, o que significa que você não precisa declarar explicitamente o tipo de uma variável. O tipo é determinado automaticamente com base no valor atribuído. Isso permite flexibilidade, mas também pode levar a comportamentos inesperados. Por exemplo, uma variável pode começar como um número e, em seguida, receber um valor de string:</p>
-                <iframe src="../iframes/tipos_de_dados/tipagem_dinamica.html" frameborder="0"></iframe>
+                <div class="iframes"><iframe src="../iframes/tipos_de_dados/tipagem_dinamica.html" frameborder="0"></iframe></div>
 
                 <p>A compreensão da tipagem dinâmica é essencial para evitar bugs e escrever código robusto.</p>
 
@@ -113,7 +115,7 @@
 
                 <p>JavaScript é uma linguagem de tipagem fraca, o que significa que permite operações entre diferentes tipos de dados sem causar um erro. Em uma linguagem de tipagem fraca, o compilador ou interpretador realiza conversões automáticas de tipos (coerção) para que a operação possa ser realizada. Isso pode levar a resultados inesperados se não for bem compreendido.</p>
 
-                <iframe src="../iframes/tipos_de_dados/Tipagem_forte_fraca.html" frameborder="0"></iframe>
+                <div class="iframes"><iframe src="../iframes/tipos_de_dados/Tipagem_forte_fraca.html" frameborder="0"></iframe></div>
 
                 <p>No primeiro exemplo, o operador + faz uma concatenação de strings porque uma das operando é uma string. No segundo exemplo, o operador - força ambos os operandos a serem convertidos para números.</p>
                 <p>Vantagens da Tipagem Fraca:</p>
@@ -133,7 +135,7 @@
                 <p>Em contrapartida, linguagens de tipagem forte (como Java, Python e Rust) não permitem operações entre diferentes tipos de dados sem conversão explícita. Em uma linguagem de tipagem forte, o tipo de dados de uma variável é rigorosamente imposto, e qualquer tentativa de usar uma variável de um tipo de dados em uma operação que espera outro tipo de dados resultará em um erro.</p>
 
                 <p>Exemplo em Python:</p>
-                <iframe src="../iframes/tipos_de_dados/tipagem_forte.html" frameborder="0"></iframe>
+                <div class="iframes"><iframe src="../iframes/tipos_de_dados/tipagem_forte.html" frameborder="0"></iframe></div>
 
                 <p>Neste exemplo, o Python gera um erro porque você está tentando somar um número inteiro e uma string sem fazer uma conversão explícita.</p>
 
@@ -159,7 +161,7 @@
 
                 <p>JavaScript pode realizar conversões de tipos (ou coerção) tanto de forma implícita quanto explícita. A coerção implícita ocorre quando o JavaScript automaticamente converte um tipo para outro, enquanto a coerção explícita é feita pelo programador usando funções como `Number()`, `String()`, e `Boolean()`.</p>
                 
-                <iframe src="../iframes/tipos_de_dados/Converção_de_Tipos.html" frameborder="0"></iframe>
+                <div class="iframes"><iframe src="../iframes/tipos_de_dados/Converção_de_Tipos.html" frameborder="0"></iframe></div>
 
                 <p>Compreender como e quando a coerção ocorre é fundamental para evitar resultados inesperados.</p>
 
@@ -167,7 +169,7 @@
 
                 <p>Tipos primitivos em JavaScript são imutáveis, o que significa que uma vez criado, seu valor não pode ser alterado. Por exemplo, operações em strings sempre retornam novas strings em vez de modificar a string original:</p>
 
-                <iframe src="../iframes/tipos_de_dados/Imutabilidade_dos_Primitivos.html" frameborder="0"></iframe>
+                <div class="iframes"><iframe src="../iframes/tipos_de_dados/Imutabilidade_dos_Primitivos.html" frameborder="0"></iframe></div>
 
                 <p>Em contraste, objetos e arrays são mutáveis e suas propriedades e elementos podem ser alterados diretamente.</p>
 
@@ -181,9 +183,20 @@
                     <li>Lembre-se de que `undefined` e `null` são diferentes. `undefined` indica que uma variável foi declarada mas não inicializada, enquanto `null` é uma atribuição explícita de ausência de valor.</li>
                     <li>Utilize `BigInt` para números inteiros extremamente grandes que não podem ser representados com precisão pelo tipo `Number`.</li>
                 </ul>
-                 <iframe src="../iframes/tipos_de_dados/Boas_praticas.html" frameborder="0"></iframe>
+                 <div class="iframes"><iframe src="../iframes/tipos_de_dados/Boas_praticas.html" frameborder="0"></iframe></div>
             </article>
         </section>
     </main>
+    <div id="cabecalho">
+        <div id="espacador"></div>
+        <footer>
+            Criador do Site
+            <a href="https://github.com/alecleypereira" target="_blank">
+                <strong>alecley Pereira</strong>
+            </a>
+        
+        </footer>
+        </body>
+    </div>
 </body>
 </html>
