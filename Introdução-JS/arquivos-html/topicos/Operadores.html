@@ -7,12 +7,43 @@
     <link rel="stylesheet" href="../../estilos/operadores/style.css">
     <link rel="stylesheet" href="../../estilos/operadores/tablet.css">
     <link rel="stylesheet" href="../../estilos/operadores/desktop.css">
+    <script src="../../arquivos-js/operadores/topicos.js"></script>
 </head>
 <body>
+    <img src="../../imagens/menu_1.png" alt="menu-laateral" class="img-menu"  onclick="menu()">
+    <div class="off-screen-menu">
+        <img src="../../imagens/menu_1.png" alt="menu-lateral" class="img-menu" onclick="menu()">
+        <ul>
+            <a href="../topicos/introducao.html">
+                <li>Introdução</li>
+            </a>
+            <a href="../topicos/Operadores.html">
+                <li>Operadoes</li>
+            </a>
+            <a href="../topicos/funcoes.html">
+                <li>Funções</li>
+            </a>
+            <a href="../topicos/estruturas_de_controle.html">
+                <li>Estruturas de Controle</li>
+            </a>
+            <a href="../topicos/estruturas_de_dados.html">
+                <li>Estruturas de Dados</li>
+            </a>
+            <a href="../topicos/index.html">
+                <li>Voltar</li>
+            </a>
+        </ul>
+    </div>
     <header>
         <h1>Operadores do JAVASCRIPT</h1>
     </header>
     <main>
+        <div id="button-flex">
+            <div class="button-topicos"> <button onclick="topico_1()">x</button> </div>
+            <div class="button-topicos"> <button onclick="topico_2()">x</button> </div>
+            <div class="button-topicos"> <button onclick="topico_3()">x</button> </div>
+            <div class="button-topicos"> <button onclick="topico_4()">x</button> </div>
+        </div>
         <section>
             <article id="topico-1">
                     <h2>O que são Operadores</h2>
@@ -34,12 +65,12 @@
                 <p>Os operadores de atribuição são usados para atribuir valores às variáveis.</p>
 
                 <ul>
-                    <li></li>Atribuição Simples (=): a = b
-                    <li></li>Atribuição de Adição (+=): a += b (equivale a a = a + b)
-                    <li></li>Atribuição de Subtração (-=): a -= b (equivale a a = a - b)
-                    <li></li>Atribuição de Multiplicação (*=): a *= b (equivale a a = a * b)
-                    <li></li>Atribuição de Divisão (/=): a /= b (equivale a a = a / b)
-                    <li></li>Atribuição de Módulo (%=): a %= b (equivale a a = a % b)
+                    <li>Atribuição Simples (=): a = b</li>
+                    <li>Atribuição de Adição (+=): a += b (equivale a a = a + b)</li>
+                    <li>Atribuição de Subtração (-=): a -= b (equivale a a = a - b)</li>
+                    <li>Atribuição de Multiplicação (*=): a *= b (equivale a a = a * b)</li>
+                    <li>Atribuição de Divisão (/=): a /= b (equivale a a = a / b)</li>
+                    <li>Atribuição de Módulo (%=): a %= b (equivale a a = a % b)</li>
                 </ul>
                 <h2>Operadores Relacionais</h2>
                 <p>Os operadores relacionais são usados para comparar valores e retornam um booleano (true ou false).</p>
@@ -70,7 +101,7 @@
                     <li>Se condição for true, o operador retorna valor1, caso contrário, retorna valor2.</li>
                 </ul>
 
-                <iframe src="../iframes/operadores/ternário.html" frameborder="0"></iframe>
+                <div class="iframes"><iframe src="../iframes/operadores/ternário.html" frameborder="0"></iframe></div>
         
                 <h2>Importância dos Operadores</h2>
                 <p>Operadores são fundamentais na programação porque permitem a execução de cálculos, a tomada de decisões, a atribuição de valores e a combinação de expressões complexas de maneira clara e concisa. Sem operadores, a escrita e a leitura de código se tornariam muito mais complicadas e menos intuitivas.</p>
@@ -87,10 +118,10 @@
                 <h4>Comparação Não Estrita</h4>
                 <p>Os operadores de comparação não estritos (== e !=) comparam dois valores após convertê-los para um tipo comum (coerção). Isso significa que, se os valores a serem comparados forem de tipos diferentes, o JavaScript tentará convertê-los para um tipo comum antes de fazer a comparação. Essa conversão pode levar a resultados inesperados.</p>
 
-                <iframe src="../iframes/operadores/Comparacao_nao_Estrita.html" frameborder="0"></iframe>
+                <div class="iframes"><iframe src="../iframes/operadores/Comparacao_nao_Estrita.html" frameborder="0"></iframe></div>
                 <h4>Comparação Estrita</h4>
                 <p>Os operadores de comparação estritos (=== e !==) comparam tanto o valor quanto o tipo dos operandos sem realizar qualquer conversão de tipo. Isso garante que a comparação seja feita de maneira mais precisa e previsível.</p>
-                <iframe src="../iframes/operadores/Comparacao_Restrita.html" frameborder="0"></iframe>
+                <div class="iframes"><iframe src="../iframes/operadores/Comparacao_Restrita.html" frameborder="0"></iframe></div>
 
                 <p>Usar operadores de comparação estrita (=== e !==) é geralmente considerado uma boa prática em JavaScript, pois evita comportamentos inesperados causados pela coerção de tipos.</p>
 
@@ -106,7 +137,7 @@
                     <li>-: Converte o operando para um número e aplica a negação.</li>
                     <li>++ e --: Incrementa ou decrementa o valor da variável.</li>
                 </ul>
-                <iframe src="../iframes/operadores/Operadores_Unarios.html" frameborder="0"></iframe>
+                <div class="iframes"><iframe src="../iframes/operadores/Operadores_Unarios.html" frameborder="0"></iframe></div>
 
             </article>
             
