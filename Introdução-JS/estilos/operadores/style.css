@@ -34,7 +34,7 @@ p{
 }
     /*div com os iframes*/
  div.iframes{
-    margin: auto;
+    margin: 10px auto 10px auto;
     text-align: center;
 }
     /*imagem do menu com onclick*/
@@ -104,8 +104,8 @@ div.button-topicos{
 }
 div.button-topicos button{
     margin: 5px;
-    height:20px;
-    width: 80px; 
+    height:35px;
+    width: 100px; 
     
 }
 div.button-topicos button:hover{
