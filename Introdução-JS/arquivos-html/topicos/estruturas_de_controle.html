@@ -5,14 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estruturas de Controle</title>
     <link rel="stylesheet" href="../../estilos/estruturas-de-controle/style.css">
-    <link rel="stylesheet" href="../../estilos/estruturas-de-controle/tablet.css">
-    <link rel="stylesheet" href="../../estilos/estruturas-de-controle/desktop.css">
+    <link rel="stylesheet" href="../../estilos/estruturas-de-controle/tablet.css"  media="(min-width:769px) and (max-width:999px)">
+    <link rel="stylesheet" href="../../estilos/estruturas-de-controle/desktop.css" media="(min-width:1000px)">
+    <script src="../../arquivos-js/estruturas-de-dados/ham-menu.js"></script>
 </head>
 <body>
+    <img src="../../imagens/menu_1.png" alt="menu-laateral" class="img-menu"  onclick="menu()">
+    <div class="off-screen-menu">
+        <img src="../../imagens/menu_1.png" alt="menu-lateral" class="img-menu" onclick="menu()">
+        <ul>
+            <a href="../topicos/introducao.html">
+                <li>Introdução</li>
+            </a>
+            <a href="../topicos/Operadores.html">
+                <li>Operadoes</li>
+            </a>
+            <a href="../topicos/funcoes.html">
+                <li>Funções</li>
+            </a>
+            <a href="../topicos/tipos_de_dados.html">
+                <li>Tipos de Dados</li>
+            </a>
+            <a href="../topicos/estruturas_de_dados.html">
+                <li>Estruturas de Dados</li>
+            </a>
+            <a href="../topicos/index.html">
+                <li>Voltar</li>
+            </a>
+        </ul>
+    </div>
     <header>
         <h1>Estruturas de Controle em JavaScript</h1>
     </header>
     <main>
+        <div id="button-flex">
+            <div class="button-topicos"> <button onclick="topico_1()">Estruturas de Controle</button> </div>
+            <div class="button-topicos"> <button onclick="topico_2()">Estruturas de Repetição</button> </div>
+        </div>
         <section>
             <article id="topico-1">
                 <h2>O que são Estruturas de Controle</h2>
@@ -21,39 +50,50 @@
                 <h2>Tipos de Estruturas de Controle</h2>
                 <h3>Condições Simples (if, else)</h3>
                 <p>As estruturas if e else são usadas para executar blocos de código com base em condições específicas.</p>
-                <iframe src="../iframes/estruturas_de_controle/Condicao_simples.html" frameborder="0"></iframe>
+                <div class="
+            iframes"><iframe src="../iframes/estruturas_de_controle/Condicao_simples.html" frameborder="0"></iframe></div>
 
                 <h3>Condições Compostas (if...else if...else)</h3>
                 <p>Quando há múltiplas condições a serem avaliadas, usamos o else if para testar condições adicionais.</p>
-                <iframe src="../iframes/estruturas_de_controle/Condicao_composta.html" frameborder="0"></iframe>
+                <div class="
+            iframes"><iframe src="../iframes/estruturas_de_controle/Condicao_composta.html" frameborder="0"></iframe></div>
 
                 <h3>Condições Aninhadas</h3>
                 <p>Condições podem ser aninhadas dentro de outras condições, criando uma árvore de decisões.</p>
-                <iframe src="../iframes/estruturas_de_controle/Condições_aninhadas.html" frameborder="0"></iframe>
+                <div class="
+            iframes"><iframe src="../iframes/estruturas_de_controle/Condições_aninhadas.html" frameborder="0"></iframe></div>
                 <h3>Condições Múltiplas (switch)</h3>
                 <p>O switch é usado para simplificar múltiplas verificações de valor em uma variável.</p>
-                <iframe src="../iframes/estruturas_de_controle/Condições_multiplas.html" frameborder="0"></iframe>
+                <div class="
+            iframes"><iframe src="../iframes/estruturas_de_controle/Condições_multiplas.html" frameborder="0"></iframe></div>
             </article>
             <article id="topico-2">
                 <h2>Estruturas de Repetição (for, while, do...while)</h2>
                 <p>Essas estruturas permitem a execução repetida de um bloco de código enquanto uma condição é verdadeira.</p>
                 <ul>
                     <li>`for`: Usado quando se sabe o número de iterações.</li>
-                    <iframe src="../iframes/estruturas_de_controle/For.html" frameborder="0"></iframe>
+                    <div class="iframes"><iframe src="../iframes/estruturas_de_controle/For.html" frameborder="0"></iframe></div>
                     <li>`while`: Usado quando a repetição depende de uma condição ser verdadeira.
                     </li>
-                    <iframe src="../iframes/estruturas_de_controle/While.html" frameborder="0"></iframe>
+                    <div class="iframes"><iframe src="../iframes/estruturas_de_controle/While.html" frameborder="0"></iframe></div>
                     <li>`do...while`: Semelhante ao while, mas garante que o bloco de código seja executado pelo menos uma vez.
                     </li>
-                    <iframe src="../iframes/estruturas_de_controle/Do_while.html" frameborder="0"></iframe>
+                    <div class="iframes"><iframe src="../iframes/estruturas_de_controle/Do_while.html" frameborder="0"></iframe></div>
                 </ul>
                 
                 <p>As estruturas de controle são elementos essenciais na construção de lógica em JavaScript, permitindo que o código seja dinâmico e adaptável a diferentes cenários. Compreender como utilizá-las eficazmente é crucial para desenvolver programas Bons e eficientes.</p>
             </article>
         </section>
     </main>
+    
     <footer>
-
+        Criador do Site
+        <a href="https://github.com/alecleypereira" target="_blank">
+                <strong>alecley Pereira</strong>
+        </a>
+        
     </footer>
+        
+    
 </body>
 </html>

@@ -35,3 +35,11 @@ ul li{
     margin-left: 5px;
     list-style-position: inside;
 }
+div.button-topicos button{
+    font-weight: 600;
+    margin: 5px;
+    height:50px;
+    width: 90px; 
+    
+        
+    }

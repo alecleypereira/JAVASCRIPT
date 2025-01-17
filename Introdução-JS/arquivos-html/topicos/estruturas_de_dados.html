@@ -4,32 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estruturas de Dados</title>
+    <link rel="stylesheet" href="../../estilos/estruturas-de-dados/style.css">
+    <link rel="stylesheet" href="../../estilos/estruturas-de-dados/tablet.css"  media="(min-width:769px) and (max-width:999px)">
+    <link rel="stylesheet" href="../../estilos/estruturas-de-dados/desktop.css" media="(min-width:1000px)">
+    <script src="../../arquivos-js/estruturas-de-dados/ham-menu.js"></script>
 </head>
 <body>
-    <head>
+    <img src="../../imagens/menu_1.png" alt="ham-menu" class="img-menu" onclick="menu()">
+
+    <div class="off-screen-menu">
+
+        <img src="../../imagens/menu_1.png" alt="ham-menu" class="img-menu" onclick="menu()">
+        <ul>
+            <a href="../topicos/tipos_de_dados.html">
+                <li>Tipos de Dados</li>
+            </a>
+            <a href="../topicos/Operadores.html">
+                <li>Operadoes</li>
+            </a>
+            <a href="../topicos/introducao.html">
+                <li>Introduçao</li>
+            </a>
+            <a href="../topicos/estruturas_de_controle.html">
+                <li>Estruturas de Controle</li>
+            </a>
+            <a href="../topicos/funcoes.html">
+                <li>Funções</li>
+            </a>
+            <a href="../topicos/index.html">
+                <li>Voltar</li>
+            </a>
+        </ul>
+    </div>
+    <header>
         <h1>Estruturas de Dados</h1>
-    </head>
+    </header>
     <main>
+        <div id="button-flex">
+            <div class="button-topicos"><button onclick="topico_1()" >Introduçao</button></div>
+            <div class="button-topicos"><button onclick="topico_2()" >Métodos Arrays</button></div>
+            <div class="button-topicos"><button onclick="topico_3()" >Métodos Objetos</button></div>
+            <div class="button-topicos"><button onclick="topico_4()" >Interações Adicionais</button></div>
+
+        </div>
         <section>
-            <article>
+            <article id="topico-1">
                 <h2>Arrays</h2>
                 <p>Arrays são coleções ordenadas de valores que podem ser de qualquer tipo, como números, strings, objetos, ou até outros arrays. Eles são definidos usando colchetes [], com os elementos separados por vírgulas. Por exemplo, const frutas = ["maçã", "banana", "laranja"];. Arrays possuem um índice numérico que começa em 0, o que significa que o primeiro elemento é acessado com frutas[0].</p>
                 
-                <iframe src="../iframes/estruturas_de_dados/ex_declara_array.html" frameborder="0"></iframe>
+                <div class="iframes"><iframe src="../iframes/estruturas_de_dados/ex_declara_array.html" frameborder="0"></iframe></div>
 
-            </article>
-            <article>
                 <h2>Objetos</h2>
                 <p>Objetos são coleções de pares chave-valor, onde as chaves são strings (ou símbolos) que mapeiam para valores de qualquer tipo. Eles são definidos usando chaves {}. Por exemplo, const pessoa = { nome: "Ana", idade: 25 };. Você pode acessar as propriedades usando a notação de ponto pessoa.nome ou colchetes pessoa["idade"].</p>
                 <p>Podemos pensar em um objeto como um array porem voce tem que nomear os indices agora chamados de propriedades.</p>
-                <iframe src="../iframes/estruturas_de_dados/ex_declara_objeto.html" frameborder="0"></iframe>
+                <div class="iframes"><iframe src="../iframes/estruturas_de_dados/ex_declara_objeto.html" frameborder="0"></iframe></div>
                 
                 <h3>Acessando propriedades usando ponto</h3>
                 <p>Usado quando você conhece o nome da propriedade e ela é um identificador válido de JavaScript (sem caracteres especiais ou espaços).</p>
                 <p>Nesse caso a propriedade é tratado como literal</p>
                 <p><strong>Literal:</strong> No contexto de programação, literal é um valor escrito diretamente no código, representando exatamente aquilo que você vê. É um valor fixo, que não depende de variáveis ou cálculos.</p>
 
-                <iframe src="../iframes/estruturas_de_dados/acessar_com_ponto.html" frameborder="0"></iframe>
+                <div class="iframes"><iframe src="../iframes/estruturas_de_dados/acessar_com_ponto.html" frameborder="0"></iframe></div>
                 <p>Não pode ser usado se o nome da propriedade:</p>
                 <ul>
                     <li>Contém espaços ou caracteres especiais (exemplo: marca do carro).</li>
@@ -40,32 +75,32 @@
                 <h3>Acessando propriedades usando colchetes</h3>
                 <p>Usado quando você precisa acessar propriedades dinamicamente, ou seja, o nome da propriedade não é um literal fixo, mas armazenado em uma variável ou definido como string. Além disso permite qualquer string como nome da propriedade, mesmo com caracteres especiais, espaços ou números.</p>
                 <h4>Com propriedade dinamica:</h4>
-                <iframe src="../iframes/estruturas_de_dados/usando_colchetes.html" frameborder="0"></iframe>
+                <div class="iframes"><iframe src="../iframes/estruturas_de_dados/usando_colchetes.html" frameborder="0"></iframe></div>
                 <h4>Com propriedades incomuns:</h4>
-                <iframe src="../iframes/estruturas_de_dados/usando_colchetes_2.html" frameborder="0"></iframe>
+                <div class="iframes"><iframe src="../iframes/estruturas_de_dados/usando_colchetes_2.html" frameborder="0"></iframe></div>
 
                 <p>Essa forma pode ser um pouco mais fléxivel pois nela você pode usar expressões ou variáveis para determinar o nome da propriedade.</p>
             </article>
 
         </section>
         <section>
-            <article>
+            <article id="topico-2">
                 <h2>Métodos Básicos de Arrays</h2>
                 <ul>
                     <li>push()</li>
                         <p> Adiciona um ou mais elementos ao final do array.</p>
-                        <iframe src="../iframes/estruturas_de_dados/ex_metodo_push().html" frameborder="0"></iframe>
+                        <div class="iframes"><iframe src="../iframes/estruturas_de_dados/ex_metodo_push().html" frameborder="0"></iframe></div>
                         <p>Retorno: o número de elementos no array após a adição.</p>
                     <li>pop()</li>
                         <p>Remove e retorna o último elemento do array.</p>
-                        <iframe src="../iframes/estruturas_de_dados/ex_metodo_pop().html" frameborder="0"></iframe>
+                        <div class="iframes"><iframe src="../iframes/estruturas_de_dados/ex_metodo_pop().html" frameborder="0"></iframe></div>
                     <li>map()</li>
                         <p>O método map() em JavaScript é usado para criar um novo array com os resultados da aplicação de uma função em cada elemento do array original. Ele não modifica o array original.</p>
-                        <iframe src="../iframes/estruturas_de_dados/ex_metodo_map().html" frameborder="0"></iframe>
+                        <div class="iframes"><iframe src="../iframes/estruturas_de_dados/ex_metodo_map().html" frameborder="0"></iframe></div>
                         <p>Retorno: Um novo array com os valores transformados pela função fornecida.</p>
                     <li>reduce()</li>
                         <p>Reduz um arrys a um único resultado/valor acumulando ao longo do array.</p>
-                        <iframe src="../iframes/estruturas_de_dados/ex_metodo_reduce().html" frameborder="0"></iframe>
+                        <div class="iframes"><iframe src="../iframes/estruturas_de_dados/ex_metodo_reduce().html" frameborder="0"></iframe></div>
                         <p>Retorno: um unico valor resultande da função usada.</p>
                         <p>No caso do método reduce() a função que ele recebe terá o primeiro parâmetros como o valor valor Anterior e o segundo como  valor Atual. Você vai usar esses parâmetros na função que irá considerar cada array um valor.</p>
                         <p>Após a função você deve definir qual será o primeiro valor do primeiro parâmetros, pois ainda não há valor anterior.</p>
@@ -73,17 +108,17 @@
                         <p>na última iteração, o valor do acumulador é atualizado com base no último elemento do array, e esse valor final é o que o reduce()</p>
                     <li>filter()</li>
                         <p>Filtra os elementos de um arrays com base em uma condição e retorna um novo array com os elementos que passaram no teste.</p>
-                        <iframe src="../iframes/estruturas_de_dados/ex_metodo_filter().html" frameborder="0"></iframe>
+                        <div class="iframes"><iframe src="../iframes/estruturas_de_dados/ex_metodo_filter().html" frameborder="0"></iframe></div>
                     <li>shift()</li>
                         <p>Remove e retorna o primeiro elemento do array.</p>
-                        <iframe src="../iframes/estruturas_de_dados/ex_metodo_shift().html" frameborder="0"></iframe>
+                        <div class="iframes"><iframe src="../iframes/estruturas_de_dados/ex_metodo_shift().html" frameborder="0"></iframe></div>
                     <li>unshift()</li>
                         <p>Adiciona um ou mais elementos no início do array.</p>
-                        <iframe src="../iframes/estruturas_de_dados/ex_metodo_unshift().html" frameborder="0"></iframe>
+                        <div class="iframes"><iframe src="../iframes/estruturas_de_dados/ex_metodo_unshift().html" frameborder="0"></iframe></div>
                         <p>Tanto o método shift quanto o unshift, ao serem usados em um array modificam a quantidade de indices e os indices de cada elemento.</p>
                     <li>splice()</li>
                         <p>Para remover, adicionar ou substituir elementos no array original.</p>
-                        <iframe src="../iframes/estruturas_de_dados/ex_metodo_splice().html" frameborder="0"></iframe>
+                        <div class="iframes"><iframe src="../iframes/estruturas_de_dados/ex_metodo_splice().html" frameborder="0"></iframe></div>
                        <p>OBS: ele modifica o array original adicionando ou removendo os elementos</p>
                        <p>Seus parametros serve para especificar onde comeca a exclusão de elementos e quantos serão excluidos a partir do primeiro parametro . Os demais adicionados serão considerados elementos a serem adiconados nesse espaço que foi apagado.</p>
                        <p>array.splice(índiceInicial, quantidadeParaRemover, item1, item2, ..., itemN)</p>
@@ -92,28 +127,29 @@
 
                     <li>slice()</li>
                         <p>Para criar cópias de partes de um array sem alterar o array original.</p>
-                        <iframe src="../iframes/estruturas_de_dados/ex_metodo_slice().html" frameborder="0"></iframe> <p>Você terá que especificar onde irá comecar e terminar a parte que você quer cópiar do array original. O primeiro valor será onde comeca e o segundo onde para. </p>
+                        <div class="iframes"><iframe src="../iframes/estruturas_de_dados/ex_metodo_slice().html" frameborder="0"></iframe> </div>
+                        <p>Você terá que especificar onde irá comecar e terminar a parte que você quer cópiar do array original. O primeiro valor será onde comeca e o segundo onde para. </p>
                         <p>Se você não especificar nenhum parametro ele irá copiar o array inteiro.</p>
                     <li>some()</li>
                         <p>Verifica se pelo menos um elemento do array passa no teste, retornando "true" ou "false".</p>
-                        <iframe src="../iframes/estruturas_de_dados/ex_metodo_some().html" frameborder="0"></iframe>
+                        <div class="iframes"><iframe src="../iframes/estruturas_de_dados/ex_metodo_some().html" frameborder="0"></iframe></div>
                     <li>every()</li>
                         <p>Verifica se todos os elemento do array passam no teste, retornando "true" ou "false".</p>
-                        <iframe src="../iframes/estruturas_de_dados/ex_metodo_every().html" frameborder="0"></iframe>
+                        <div class="iframes"><iframe src="../iframes/estruturas_de_dados/ex_metodo_every().html" frameborder="0"></iframe></div>
                     <li>find()</li>
                         <p>Retorna o primeiro elemento que passa em um teste especifico.</p>
-                        <iframe src="../iframes/estruturas_de_dados/ex_metodo_find().html" frameborder="0"></iframe>
+                        <div class="iframes"><iframe src="../iframes/estruturas_de_dados/ex_metodo_find().html" frameborder="0"></iframe></div>
                     <li>include()</li>
                         <p>Verifica se um array tem um valor especifico, retornando "true" ou "false".</p>
-                        <iframe src="../iframes/estruturas_de_dados/ex_includes().html" frameborder="0"></iframe>
+                        <div class="iframes"><iframe src="../iframes/estruturas_de_dados/ex_includes().html" frameborder="0"></iframe></div>
                     <li>sort()</li>
                         <p>Ordena os elementos do arrys de forma crecente ou decrecente</p><p>Esse método tem 2 parametros na sua função callback e os compara se der negativo ele mantem a ordem se der positivo ele troca os valores se der zero mantem a ordem</p>
-                        <iframe src="../iframes/estruturas_de_dados/ex_metodo_sort().html" frameborder="0"></iframe>
+                        <div class="iframes"><iframe src="../iframes/estruturas_de_dados/ex_metodo_sort().html" frameborder="0"></iframe></div>
                         <p>voce pode usar a funcao 'localeCompare' para compara strings essa funcao compara duas strings de acordo com as regras do idioma, retornando um valor +, - ou nulo.</p>
-                        <iframe src="../iframes/estruturas_de_dados/ex_metodo_sort()_2.html" frameborder="0"></iframe>
+                        <div class="iframes"><iframe src="../iframes/estruturas_de_dados/ex_metodo_sort()_2.html" frameborder="0"></iframe></div>
                     <li>forEach</li>
                         <p>Serve para iterar e executar funções em cada elemento do array</p>
-                        <iframe src="../iframes/estruturas_de_dados/ex_metodo_forEach().html" frameborder="0"></iframe>
+                        <div class="iframes"><iframe src="../iframes/estruturas_de_dados/ex_metodo_forEach().html" frameborder="0"></iframe></div>
                         <p>O método em si não retorna nada (Undefined), porém ele serve para você iterar sobre os elementos do array e armazenar ou exibir eles.</p>
                         <p>Caso queria modificar algo no array original é necessario que faça explicitamente isso como no exemplo acima.</p>
 
@@ -128,78 +164,69 @@
                 <p><strong>OBS:</strong> vale lembar que os nomes dos parâmetros são nomeados, ou seja, você pode escolher os nomes. oque importa no final é a orndem que eles foram colocados.</p>
                 <p>A depender do método ele pode precisar de um ou mais parametros assim, ou nem sequer necessitar da função callback (usada dentro do método).</p>
 
-            </article>
-            <article>
+           
+           
                 <h2>Como excluir elementos de um array</h2>
                 <p>O método mais comum e eficaz para remover um elemento em um índice específico é o splice(). Pórem existe outro muito usado também chamado <strong>'Delete'</strong>.</p>
                 <h3>Delete em array</h3>
                 <p>O delete remove o elemento de um índice específico, mas não reordena o array. O índice ainda existirá, mas será preenchido com undefined.</p>
-                <iframe src="../iframes/estruturas_de_dados/Ex_delete.html" frameborder="0"></iframe>
+                <div class="iframes"><iframe src="../iframes/estruturas_de_dados/Ex_delete.html" frameborder="0"></iframe></div>
                 <p><strong>Obs:</strong>O uso de delete não é recomendado para arrays, porque deixa "buracos" no array.  </p>
-
-
+           
+                
             </article>
-            <article>
-                <h2>Loops para Iterar Arrays e Objetos</h2>
-                <ul>
-                    <li>For...of</li>
-                    <p>É usado para iterar elementos de arrays ou outros objetos iteráveis. Ele percorre os valores dos elementos.</p>
-                    <li>For...in</li>
-                    <p>É usado para iterar as chaves de um objeto. Ele percorre as propriedades enumeráveis.</p>
-                </ul>
-            </article>
-            <article>
+            <article id="topico-3">
                 <h2>Métodos Básicos de Objetos</h2>
 
                 <ul>
                     <li>Object.assing()</li>
                     <p>O Object.assign() adiciona as pripriedades de um objeto a outro objeto.</p>
-                    <iframe src="../iframes/estruturas_de_dados/exemplo_Object.assing().html" frameborder="0"></iframe>
+                    <div class="iframes"><iframe src="../iframes/estruturas_de_dados/exemplo_Object.assing().html" frameborder="0"></iframe></div>
                     <p>O método vai funcionar com ou sem o objeto vazio no comeco.</p>
                     <p>A forma que o Object.assign() funciona faz o ultimo objeto escrito nele passar suas propriedades para o anterior, isso acontece ate chegar no primeiro que passar todas as propriedades acumuladas pra onde você quer. Porém o primeiro objeto tambem fica com as propriedas entao se você não colocar um objeto vazio primeiro, o objeto com certas propriedades ficara com todas e você pode não querer isso. EX: </p>
-                    <iframe src="../iframes/estruturas_de_dados/Object.assing()_2.html" frameborder="0"></iframe>
+                    <div class="iframes"><iframe src="../iframes/estruturas_de_dados/Object.assing()_2.html" frameborder="0"></iframe></div>
                     <p>Nesse caso pessoa e o primeiro objeto a ser colocado, isso faz com que ele tenha todos as propriedades dos anteriores a ele, nesse caso o 'velho'.</p>
                     <p>se mais de um objeto tiver uma propriedade com o mesmo nome, a prioridade  do valor que vai ser sobre escrito sera do ultimo com essa propriedade. EX:</p>
-                    <iframe src="../iframes/estruturas_de_dados/Object.assing()_3.html" frameborder="0"></iframe>
+                    <div class="iframes"><iframe src="../iframes/estruturas_de_dados/Object.assing()_3.html" frameborder="0"></iframe></div>
                     <p><strong>OBS:</strong> É recomendado sempre colocar o objeto vazio no Object.assing para evitar problemas e ser mais organizado</p>
                     <li>Object.entries()</li>
                     <p>O Object.entries() retorna um array de arrays que em cada sub-array tera um par de chaves com [[nome da propriedade], [valor dessa propriedade]].</p>
-                    <iframe src="../iframes/estruturas_de_dados/Object.entries().html" frameborder="0"></iframe>
+                    <div class="iframes"><iframe src="../iframes/estruturas_de_dados/Object.entries().html" frameborder="0"></iframe></div>
                     <li>Object.freeze()</li>
                     <p>O Object.freeze() congela o objeto, impedindo adição, remoção e modificação das propriedades do objeto.</p>
-                    <iframe src="../iframes/estruturas_de_dados/Object.freeze().html" frameborder="0"></iframe>
+                    <div class="iframes"><iframe src="../iframes/estruturas_de_dados/Object.freeze().html" frameborder="0"></iframe></div>
                     <li>Object.hasOwnProperty()</li>
                     <p>O Object.hasownProperty() verifica se alguma propriedade com o nome que voce da.</p>
                     <p>Porém só retorna true para propriedades não herdadas se você quiser ver se tem alguma mesmo que seja herdade use for in.</p>
-                    <iframe src="../iframes/estruturas_de_dados/Object.hasOwnProperty().html" frameborder="0"></iframe>
+                    <div class="iframes"><iframe src="../iframes/estruturas_de_dados/Object.hasOwnProperty().html" frameborder="0"></iframe></div>
                     <p>Propriedades herdadas são aquelas que não foram diretamente definidas no objeto, geralmente atravez de cadeias de protótipos (prototype chain) em JavaScript.</p>
 
                     <li>Object.keys()</li>
                     <p>O Object.keys() retorna o nome das propriedades do objeto, dentro de um array.</p>
 
-                    <iframe src="../iframes/estruturas_de_dados/Object.keys().html" frameborder="0"></iframe>
+                    <div class="iframes"><iframe src="../iframes/estruturas_de_dados/Object.keys().html" frameborder="0"></iframe></div>
                     <li>Object.seal()</li>
                     <p>O Object.seal() sela o objeto impedindo remoção, adição porem deixando modificações.</p>
 
-                    <iframe src="../iframes/estruturas_de_dados/Object.seal().html" frameborder="0"></iframe>
+                    <div class="iframes"><iframe src="../iframes/estruturas_de_dados/Object.seal().html" frameborder="0"></iframe></div>
                     <li>Object.values()</li>
                     <p>O Object.values() retorna dentro de um array os valores das propriedades de um objeto</p>
-                    <iframe src="../iframes/estruturas_de_dados/Obejct.values().html" frameborder="0"></iframe>
+                    <div class="iframes"><iframe src="../iframes/estruturas_de_dados/Obejct.values().html" frameborder="0"></iframe></div>
                     <li>Object.create()</li>
                     <p>Se usa Obejct.create() para fazer um objeto ser prototipo de outro.</p>
-                    <iframe src="../iframes/estruturas_de_dados/Object.crate().html" frameborder="0"></iframe>
+                    <div class="iframes"><iframe src="../iframes/estruturas_de_dados/Object.crate().html" frameborder="0"></iframe></div>
                     <li>Object.setPrototypeOf()</li>
                     <p>O método Object.setPrototypeOf(obj, prototype) serve para definir explicitamente o protótipo (ou herança) de um objeto. O objeto passado como primeiro argumento será o que receberá o segundo argumento como seu protótipo.</p>
-                    <iframe src="../iframes/estruturas_de_dados/Object.setPrototypeOf().html" frameborder="0"></iframe>
+                    <div class="iframes"><iframe src="../iframes/estruturas_de_dados/Object.setPrototypeOf().html" frameborder="0"></iframe></div>
                     <p>pessoa é o objeto que recebe o protótipo.</p>
                     <p>heranca é o protótipo que fornece suas propriedades.</p>
 
                 </ul>
-            </article>
-            <article>
+            
+            
                 <h2>Heranças em JavaScript</h2>
                 <p>Em JavaScript, cada objeto tem um prótotipo (prototype), que é outro objeto do qual ele 'herda' propriedades e métodos. Quando você tenta acessar um propriedade ou método em um objeto, o JavaScript primeiro verificar se essa propriedade existe no proprio objeto. Se não encontrar , ele então procura no prototipo do objeto, e assim por diante até chegar no topo que é (Object.prototype).</p>
-                <iframe src="../iframes/estruturas_de_dados/exemplo_heranças.html" frameborder="0"></iframe>
+                <div class="iframes"><iframe src="../iframes/estruturas_de_dados/exemplo_heranças.html" frameborder="0"></iframe></div>
                 <p><strong>OBS:</strong>Se você mudar algum protótipo os objetos que herdam dele também verão as mudanças.</p>
                 <p>E se você mudar uma propriedade ou método herdado no objeto, essa propriedade deixara de ser herdada e vai ser do proprio objeto e a propriedade do protótipo permanece inalterada</p>
                 <p>Se quiser "voltar" a usar a propriedade herdada, remova a propriedade própria com delete. E se você deletar a propridade no protótipo, ela é deletada do obejto que tinha ele como protótipo.</p>
@@ -207,7 +234,7 @@
                 <p>O this no JavaScript é uma palavra-chave especial que referencia o contexto de execução atual, ou seja, o objeto ao qual a função está associada ou que a "invocou". O valor de this depende de como e onde a função é chamada.</p>
                 <p>No contexto global, fora de qualquer função ou objeto, o valor de this depende do ambiente:</p>
                 <ul>
-                    <li>Navedador:</li>
+                    <li>Navegador:</li>
                     <p>Em navegadores, this referencia o objeto global window.</p>
                     <li>Node.js:</li>
                     <p>Em módulos Node.js, this referencia o objeto module.exports.</p>
@@ -215,34 +242,45 @@
                     <p>this em funções regulares referencia o objeto global (como window no navegador).</p>
                     <li>Como método de um objeto:</li>
                     <p>Se a função é chamada como um método de um objeto, this referencia o objeto que chamou o método:</p>
-                    <iframe src="../iframes/estruturas_de_dados/This_1.html" frameborder="0"></iframe>
+                    <div class="iframes"><iframe src="../iframes/estruturas_de_dados/This_1.html" frameborder="0"></iframe></div>
                     <p>Se a função for atribuída a outra variável, ela perde o contexto original:</p>
-                    <iframe src="../iframes/estruturas_de_dados/This_2.html" frameborder="0"></iframe>
+                    <div class="iframes"><iframe src="../iframes/estruturas_de_dados/This_2.html" frameborder="0"></iframe></div>
                 </ul>
             </article>
-            <article>
+            <article id="topico-4">
+                <h2>Loops para Iterar Arrays e Objetos</h2>
+                <ul>
+                    <li>For...of</li>
+                    <p>É usado para iterar elementos de arrays ou outros objetos iteráveis. Ele percorre os valores dos elementos.</p>
+                    <li>For...in</li>
+                    <p>É usado para iterar as chaves de um objeto. Ele percorre as propriedades enumeráveis.</p>
+                </ul>
                 <h2>For in</h2>
                 <p>O for in funciona em objetos não iteraveis (objetos normais e arrys) e ele serve para iterar com as chaves(Em array idices em objetos propriedades), valores e seu objeto.</p>
-                <iframe src="../iframes/estruturas_de_dados/for_in.html" frameborder="0"></iframe>
+                <div class="iframes"><iframe src="../iframes/estruturas_de_dados/for_in.html" frameborder="0"></iframe></div>
                 <p><strong>OBS:</strong>A palavra chave é configuravel, apenas a o nome do objeto não.</p>
                 <h2>For of</h2>
                 <p>For of serve para se usados em objetos iteraveis(objetos que não necessita passar por uma propriedade para acessar seus valores).</p>
                 <p>Sendo assim ele não itera sobre a propriedade, e sim sobre o valor e o objeto como o array ou uma string(que pode virar um objeto).</p>
-                <iframe src="../iframes/estruturas_de_dados/for_of.html" frameborder="0"></iframe>
+                <div class="iframes"><iframe src="../iframes/estruturas_de_dados/for_of.html" frameborder="0"></iframe></div>
 
                 <p>Exemplo com string:</p>
                 
-                <iframe src="../iframes/estruturas_de_dados/for_in_2.html" frameborder="0"></iframe>
+                <div class="iframes"><iframe src="../iframes/estruturas_de_dados/for_in_2.html" frameborder="0"></iframe></div>
 
                 <h3>Como ver se seu objeto tem propriedaades herdadas:</h3>
                 <p>Para verificar se uma propriedade é herdada, você pode combinar for...in com o método hasOwnProperty(), que retorna true apenas para propriedades próprias do objeto.</p>
-                <iframe src="../iframes/estruturas_de_dados/Object.setPrototypeOf()_2.html" frameborder="0"></iframe>
-                <p></p>
+                <div class="iframes"><iframe src="../iframes/estruturas_de_dados/Object.setPrototypeOf()_2.html" frameborder="0"></iframe></div>
+                
             </article>
         </section>
     </main>
     <footer>
-        
+        Criador do Site
+        <a href="https://github.com/alecleypereira" target="_blank">
+            <strong>alecley Pereira</strong>
+        </a>
+    
     </footer>
 </body>
 </html>

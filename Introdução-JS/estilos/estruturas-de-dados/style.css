@@ -7,18 +7,20 @@
 }
 
 body{
-    background-color: rgb(219, 199, 217);
+    background-color: rgb(173, 167, 167);
    
     font-family: Arial, Helvetica, sans-serif;
 }
     
 
 main{
-    background-color: rgba(168, 152, 167, 0.877) ;
-    box-shadow: 2px 2px rgb(0, 0, 0);
+    background-color: rgb(107, 100, 100) ;
+    box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.50);
     margin: auto;
     width: 100%; 
     border-radius: 20px;
+    padding: 20px 0px;
+    
 }
     /*titulos*/
 h1{
@@ -32,7 +34,10 @@ h1, h2{
 
 }
 h2{text-shadow: 2px 2px rgba(0, 0, 0, 0.201);}
-h3{text-shadow:2px 2px rgba(0, 0, 0, 0.158) ;}
+h3{
+    text-shadow:2px 2px rgba(0, 0, 0, 0.158) ;
+    margin-left: 5px;
+}
 
 
 
@@ -50,7 +55,7 @@ iframe{
     border-radius: 10px;
 }
 div.iframes{
-    
+    margin: 10px auto;
     text-align: center;
 }
 
@@ -64,8 +69,8 @@ img.img-menu{
 div.off-screen-menu{
     overflow-y:auto;
     position: fixed;
-    background-color: rgb(168, 152, 167);
-    color: rgb(0, 0, 0);
+    background-color: rgb(243, 131, 131);
+    
     box-shadow: 0px 3px 13px 2px rgba(0, 0, 0, 0.329);
     border-radius:0px 0px 7px 7px ;
     height: 80vh;
@@ -78,7 +83,7 @@ div.off-screen-menu{
 
 div.off-screen-menu ul a{
     text-decoration: none;
-        
+    color:rgb(100, 30, 30) ;
     width: 200px;
     height: 30px;
     }
@@ -126,8 +131,9 @@ div.button-topicos{
 div.button-topicos button{
     font-weight: 600;
     margin: 5px;
-    height:25px;
+    height:50px;
     width: 80px; 
+    
         
     }
 
@@ -160,9 +166,8 @@ footer strong{
 #cabecalho{
     display: flex;
     flex-direction: column;
-    min-height: 50vh;
+    min-height: 30vh;
 }
 #espacador{
     flex: 1;
-    
 }
